@@ -1,0 +1,211 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "graphic" (version "1.4"))
+(symbol
+	(rect 232 232 424 504)
+	(text "reg_E" (rect 5 0 33 12)(font "Arial" ))
+	(text "inst" (rect 8 256 25 268)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "dwreg" (rect 0 0 28 12)(font "Arial" ))
+		(text "dwreg" (rect 21 27 49 39)(font "Arial" ))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "dm2reg" (rect 0 0 36 12)(font "Arial" ))
+		(text "dm2reg" (rect 21 43 57 55)(font "Arial" ))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "dwmem" (rect 0 0 37 12)(font "Arial" ))
+		(text "dwmem" (rect 21 59 58 71)(font "Arial" ))
+		(line (pt 0 64)(pt 16 64))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "daluc[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "daluc[3..0]" (rect 21 75 72 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 3))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "daluimm" (rect 0 0 41 12)(font "Arial" ))
+		(text "daluimm" (rect 21 91 62 103)(font "Arial" ))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "da[31..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "da[31..0]" (rect 21 107 64 119)(font "Arial" ))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "db[31..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "db[31..0]" (rect 21 123 64 135)(font "Arial" ))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "dimm[31..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "dimm[31..0]" (rect 21 139 80 151)(font "Arial" ))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "drn[4..0]" (rect 0 0 41 12)(font "Arial" ))
+		(text "drn[4..0]" (rect 21 155 62 167)(font "Arial" ))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 0 176)
+		(input)
+		(text "dshift" (rect 0 0 28 12)(font "Arial" ))
+		(text "dshift" (rect 21 171 49 183)(font "Arial" ))
+		(line (pt 0 176)(pt 16 176))
+	)
+	(port
+		(pt 0 192)
+		(input)
+		(text "djal" (rect 0 0 16 12)(font "Arial" ))
+		(text "djal" (rect 21 187 37 199)(font "Arial" ))
+		(line (pt 0 192)(pt 16 192))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "dpc4[31..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "dpc4[31..0]" (rect 21 203 76 215)(font "Arial" ))
+		(line (pt 0 208)(pt 16 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "clock" (rect 0 0 25 12)(font "Arial" ))
+		(text "clock" (rect 21 219 46 231)(font "Arial" ))
+		(line (pt 0 224)(pt 16 224))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "resetn" (rect 0 0 30 12)(font "Arial" ))
+		(text "resetn" (rect 21 235 51 247)(font "Arial" ))
+		(line (pt 0 240)(pt 16 240))
+	)
+	(port
+		(pt 192 32)
+		(output)
+		(text "ewreg" (rect 0 0 28 12)(font "Arial" ))
+		(text "ewreg" (rect 148 27 176 39)(font "Arial" ))
+		(line (pt 192 32)(pt 176 32))
+	)
+	(port
+		(pt 192 48)
+		(output)
+		(text "em2reg" (rect 0 0 36 12)(font "Arial" ))
+		(text "em2reg" (rect 141 43 177 55)(font "Arial" ))
+		(line (pt 192 48)(pt 176 48))
+	)
+	(port
+		(pt 192 64)
+		(output)
+		(text "ewmem" (rect 0 0 37 12)(font "Arial" ))
+		(text "ewmem" (rect 140 59 177 71)(font "Arial" ))
+		(line (pt 192 64)(pt 176 64))
+	)
+	(port
+		(pt 192 80)
+		(output)
+		(text "ealuc[3..0]" (rect 0 0 51 12)(font "Arial" ))
+		(text "ealuc[3..0]" (rect 128 75 179 87)(font "Arial" ))
+		(line (pt 192 80)(pt 176 80)(line_width 3))
+	)
+	(port
+		(pt 192 96)
+		(output)
+		(text "ealuimm" (rect 0 0 41 12)(font "Arial" ))
+		(text "ealuimm" (rect 137 91 178 103)(font "Arial" ))
+		(line (pt 192 96)(pt 176 96))
+	)
+	(port
+		(pt 192 112)
+		(output)
+		(text "ea[31..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "ea[31..0]" (rect 135 107 178 119)(font "Arial" ))
+		(line (pt 192 112)(pt 176 112)(line_width 3))
+	)
+	(port
+		(pt 192 128)
+		(output)
+		(text "eb[31..0]" (rect 0 0 43 12)(font "Arial" ))
+		(text "eb[31..0]" (rect 135 123 178 135)(font "Arial" ))
+		(line (pt 192 128)(pt 176 128)(line_width 3))
+	)
+	(port
+		(pt 192 144)
+		(output)
+		(text "eimm[31..0]" (rect 0 0 59 12)(font "Arial" ))
+		(text "eimm[31..0]" (rect 122 139 181 151)(font "Arial" ))
+		(line (pt 192 144)(pt 176 144)(line_width 3))
+	)
+	(port
+		(pt 192 160)
+		(output)
+		(text "ern0[4..0]" (rect 0 0 47 12)(font "Arial" ))
+		(text "ern0[4..0]" (rect 132 155 179 167)(font "Arial" ))
+		(line (pt 192 160)(pt 176 160)(line_width 3))
+	)
+	(port
+		(pt 192 176)
+		(output)
+		(text "eshift" (rect 0 0 28 12)(font "Arial" ))
+		(text "eshift" (rect 148 171 176 183)(font "Arial" ))
+		(line (pt 192 176)(pt 176 176))
+	)
+	(port
+		(pt 192 192)
+		(output)
+		(text "ejal" (rect 0 0 16 12)(font "Arial" ))
+		(text "ejal" (rect 158 187 174 199)(font "Arial" ))
+		(line (pt 192 192)(pt 176 192))
+	)
+	(port
+		(pt 192 208)
+		(output)
+		(text "epc4[31..0]" (rect 0 0 55 12)(font "Arial" ))
+		(text "epc4[31..0]" (rect 125 203 180 215)(font "Arial" ))
+		(line (pt 192 208)(pt 176 208)(line_width 3))
+	)
+	(drawing
+		(rectangle (rect 16 16 176 256))
+	)
+)
