@@ -3,5 +3,5 @@ module reg_F(pc_src, wpcir, clock, resetn, pc);
 	input				wpcir, clock, resetn;
 	output [31:0]  pc;
 	
-	/* need to complete */
+	dffe32pc ip(pc_src, clock, resetn, wpcir, pc);
 endmodule
