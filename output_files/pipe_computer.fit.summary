@@ -1,12 +1,12 @@
-Fitter Status : Successful - Mon Dec 10 22:16:38 2018
+Fitter Status : Successful - Tue Dec 11 11:01:13 2018
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Web Edition
 Revision Name : pipe_computer
 Top-level Entity Name : pipe_computer
 Family : Cyclone V
 Device : 5CSEMA5F31C6
 Timing Models : Preliminary
-Logic utilization (in ALMs) : 1,429 / 32,070 ( 4 % )
-Total registers : 1554
+Logic utilization (in ALMs) : 1,434 / 32,070 ( 4 % )
+Total registers : 1529
 Total pins : 67 / 457 ( 15 % )
 Total virtual pins : 0
 Total block memory bits : 5,120 / 4,065,280 ( < 1 % )
