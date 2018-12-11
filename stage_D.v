@@ -22,22 +22,11 @@ module pipe_D_stage(mwreg, mrn, ern, ewreg, em2reg, mm2reg, dpc4,
 	wire   [1:0]  fwda, fwdb;
 	wire   [31:0] qa, qb;
 
-	//wire   [5:0]  op = inst[31:26];
-	//wire   [5:0]  func = inst[5:0];
-	//wire   [4:0]  rs = inst[25:21];
-	//wire   [4:0]  rt = inst[20:16];
-	//wire   [4:0]  rd = inst[15:11];
-	//wire   [15:0] imm = inst[15:0];
-	//wire   [25:0] addr = inst[25:0];
-	//wire   [31:0] sa = {27'b0, inst[10:6]}; // zero extend sa to 32 bits for shift instruction
 	wire          e = sext & imm[15]; // the bit to extend
 	wire   [15:0] imm_ext = {16{e}}; // high 16 sign bit when sign extend (otherwise 0)
-	wire   [31:0] boffset = {{16{imm[15]}},imm, 2'b00}; // branch addr offset
 	wire   [31:0] immediate = {imm_ext, imm}; // extend immediate to high 16
 
 	assign rsrtequ = da == db;
-	//assign jpc = {dpc4[31:28], addr, 2'b00};
-	//assign bpc = dpc4 + boffset;
 	assign dimm = op == 6'b000000 ? sa : immediate; // combine sa and immediate to one signal
 
 	pipe_cu cu(op, func, rs, rt, ern, mrn, rsrtequ, ewreg, em2reg, mwreg, mm2reg,

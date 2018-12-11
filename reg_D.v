@@ -13,7 +13,7 @@ jpc,bpc
 	output [31:0] dpc4;
 	
 	wire   [31:0] inst;
-	wire   [31:0] boffset = {{16{imm[15]}},imm, 2'b00}; // branch addr offset
+	wire   [31:0] boffset = {{14{imm[15]}},imm, 2'b00}; // branch addr offset
 		
 	assign op = inst[31:26];
 	assign func = inst[5:0];
