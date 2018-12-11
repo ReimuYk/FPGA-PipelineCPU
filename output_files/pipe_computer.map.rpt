@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipe_computer
-Tue Dec 11 19:29:05 2018
+Tue Dec 11 21:17:31 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -51,7 +51,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 11 19:29:05 2018      ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 11 21:17:31 2018      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; pipe_computer                              ;
 ; Top-level Entity Name           ; pipe_computer                              ;
@@ -226,10 +226,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;                                             ;                ;
 ; Combinational ALUT usage for logic          ; 1881           ;
 ;     -- 7 input functions                    ; 25             ;
-;     -- 6 input functions                    ; 1026           ;
-;     -- 5 input functions                    ; 287            ;
-;     -- 4 input functions                    ; 126            ;
-;     -- <=3 input functions                  ; 417            ;
+;     -- 6 input functions                    ; 1027           ;
+;     -- 5 input functions                    ; 271            ;
+;     -- 4 input functions                    ; 125            ;
+;     -- <=3 input functions                  ; 433            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 1411           ;
 ;                                             ;                ;
@@ -239,8 +239,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Total DSP Blocks                            ; 0              ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 1475           ;
-; Total fan-out                               ; 15347          ;
-; Average fan-out                             ; 4.40           ;
+; Total fan-out                               ; 15304          ;
+; Average fan-out                             ; 4.39           ;
 +---------------------------------------------+----------------+
 
 
@@ -250,10 +250,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                  ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; |pipe_computer                                  ; 1881 (0)          ; 1411 (0)     ; 5120              ; 0          ; 67   ; 0            ; |pipe_computer                                                                                                                       ; work         ;
-;    |pipe_D_reg:inst3|                           ; 0 (0)             ; 64 (0)       ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_reg:inst3                                                                                                      ; work         ;
+;    |pipe_D_reg:inst3|                           ; 30 (30)           ; 64 (0)       ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_reg:inst3                                                                                                      ; work         ;
 ;       |dffe32:ins_r_d|                          ; 0 (0)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_reg:inst3|dffe32:ins_r_d                                                                                       ; work         ;
 ;       |dffe32:pc4_r_d|                          ; 0 (0)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_reg:inst3|dffe32:pc4_r_d                                                                                       ; work         ;
-;    |pipe_D_stage:inst4|                         ; 1053 (66)         ; 992 (0)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4                                                                                                    ; work         ;
+;    |pipe_D_stage:inst4|                         ; 1023 (36)         ; 992 (0)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4                                                                                                    ; work         ;
 ;       |mux2x5:selectrn|                         ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|mux2x5:selectrn                                                                                    ; work         ;
 ;       |mux4x32:selecta|                         ; 450 (450)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selecta                                                                                    ; work         ;
 ;       |mux4x32:selectb|                         ; 447 (447)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selectb                                                                                    ; work         ;
@@ -646,7 +646,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Dec 11 19:28:54 2018
+    Info: Processing started: Tue Dec 11 21:17:22 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipe_computer -c pipe_computer
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file cu.v
@@ -744,12 +744,14 @@ Info (12128): Elaborating entity "dff32" for hierarchy "pipe_M_reg:inst7|dff32:a
 Info (12128): Elaborating entity "pipe_E_reg" for hierarchy "pipe_E_reg:inst5"
 Info (12128): Elaborating entity "dff4" for hierarchy "pipe_E_reg:inst5|dff4:aluc_r_e"
 Info (12128): Elaborating entity "pipe_D_stage" for hierarchy "pipe_D_stage:inst4"
+Warning (10036): Verilog HDL or VHDL warning at stage_D.v(35): object "boffset" assigned a value but never read
+Warning (10230): Verilog HDL assignment warning at stage_D.v(35): truncated value with size 34 to match size of target (32)
 Info (12128): Elaborating entity "pipe_cu" for hierarchy "pipe_D_stage:inst4|pipe_cu:cu"
 Info (12128): Elaborating entity "regfile" for hierarchy "pipe_D_stage:inst4|regfile:rf"
 Info (12128): Elaborating entity "mux4x32" for hierarchy "pipe_D_stage:inst4|mux4x32:selecta"
 Info (12128): Elaborating entity "mux2x5" for hierarchy "pipe_D_stage:inst4|mux2x5:selectrn"
-Info (12128): Elaborating entity "pipe_W_reg" for hierarchy "pipe_W_reg:inst9"
 Info (12128): Elaborating entity "pipe_D_reg" for hierarchy "pipe_D_reg:inst3"
+Warning (10230): Verilog HDL assignment warning at reg_D.v(16): truncated value with size 34 to match size of target (32)
 Info (12128): Elaborating entity "dffe32" for hierarchy "pipe_D_reg:inst3|dffe32:pc4_r_d"
 Info (12128): Elaborating entity "pipe_F_stage" for hierarchy "pipe_F_stage:inst2"
 Info (12128): Elaborating entity "pipe_instmem" for hierarchy "pipe_F_stage:inst2|pipe_instmem:instmem"
@@ -778,6 +780,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/alts
 Info (12128): Elaborating entity "altsyncram_pqg1" for hierarchy "pipe_F_stage:inst2|pipe_instmem:instmem|rom_1port:irom|altsyncram:altsyncram_component|altsyncram_pqg1:auto_generated"
 Info (12128): Elaborating entity "pipe_F_reg" for hierarchy "pipe_F_reg:inst1"
 Info (12128): Elaborating entity "dffe32pc" for hierarchy "pipe_F_reg:inst1|dffe32pc:ip"
+Info (12128): Elaborating entity "pipe_W_reg" for hierarchy "pipe_W_reg:inst9"
 Info (12128): Elaborating entity "pipe_E_stage" for hierarchy "pipe_E_stage:inst6"
 Info (12128): Elaborating entity "mux2x32" for hierarchy "pipe_E_stage:inst6|mux2x32:selectalua"
 Info (12128): Elaborating entity "alu" for hierarchy "pipe_E_stage:inst6|alu:al_unit"
@@ -785,15 +788,15 @@ Info (12128): Elaborating entity "pipe_W_stage" for hierarchy "pipe_W_stage:inst
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3270 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3269 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 3139 logic cells
+    Info (21061): Implemented 3138 logic cells
     Info (21064): Implemented 64 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4731 megabytes
-    Info: Processing ended: Tue Dec 11 19:29:05 2018
-    Info: Elapsed time: 00:00:11
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 17 warnings
+    Info: Peak virtual memory: 4719 megabytes
+    Info: Processing ended: Tue Dec 11 21:17:31 2018
+    Info: Elapsed time: 00:00:09
     Info: Total CPU time (on all processors): 00:00:09
 
 

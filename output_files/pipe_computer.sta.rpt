@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for pipe_computer
-Tue Dec 11 19:31:04 2018
+Tue Dec 11 21:19:20 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -130,7 +130,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-----------+-----------------+------------+------+
 ; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
 +-----------+-----------------+------------+------+
-; 61.14 MHz ; 61.14 MHz       ; CLOCK_50   ;      ;
+; 58.47 MHz ; 58.47 MHz       ; CLOCK_50   ;      ;
 +-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -146,7 +146,7 @@ HTML report is unavailable in plain text report export.
 +----------+---------+----------------+
 ; Clock    ; Slack   ; End Point TNS  ;
 +----------+---------+----------------+
-; CLOCK_50 ; -12.563 ; -7240.119      ;
+; CLOCK_50 ; -12.658 ; -6845.660      ;
 +----------+---------+----------------+
 
 
@@ -155,7 +155,7 @@ HTML report is unavailable in plain text report export.
 +----------+-------+-----------------+
 ; Clock    ; Slack ; End Point TNS   ;
 +----------+-------+-----------------+
-; CLOCK_50 ; 0.404 ; 0.000           ;
+; CLOCK_50 ; 0.398 ; 0.000           ;
 +----------+-------+-----------------+
 
 
@@ -176,7 +176,7 @@ No paths to report.
 +----------+--------+-------------------------------+
 ; Clock    ; Slack  ; End Point TNS                 ;
 +----------+--------+-------------------------------+
-; CLOCK_50 ; -2.174 ; -1195.139                     ;
+; CLOCK_50 ; -2.174 ; -1208.322                     ;
 +----------+--------+-------------------------------+
 
 
@@ -185,21 +185,21 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 4.672 ; 5.517 ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 4.672 ; 5.517 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 4.517 ; 5.189 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 3.936 ; 4.439 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 6.081 ; 6.978 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 4.845 ; 5.627 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; 4.830 ; 5.377 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; 5.248 ; 5.722 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; 5.092 ; 5.680 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; 5.776 ; 6.391 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; 5.592 ; 6.412 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; 5.353 ; 5.798 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; 6.081 ; 6.978 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; 5.168 ; 5.627 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; 5.123 ; 5.706 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 5.027 ; 5.892 ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 4.781 ; 5.551 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; 5.027 ; 5.892 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 4.173 ; 4.771 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 6.961 ; 7.786 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 4.941 ; 5.243 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; 5.596 ; 6.219 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; 5.455 ; 6.133 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; 5.370 ; 5.893 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; 5.665 ; 6.130 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; 5.689 ; 6.218 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; 6.961 ; 7.786 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; 6.451 ; 7.272 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; 5.440 ; 5.928 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; 5.339 ; 5.663 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -208,21 +208,21 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 0.590  ; 0.126  ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 0.238  ; -0.397 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 0.174  ; -0.338 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 0.590  ; 0.126  ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; -0.051 ; -0.397 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; -0.943 ; -1.460 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; -0.414 ; -0.877 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; -0.051 ; -0.397 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; -0.622 ; -1.103 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; -0.610 ; -1.025 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; -0.240 ; -0.672 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; -0.196 ; -0.487 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; -1.035 ; -1.680 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; -0.103 ; -0.448 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; -0.397 ; -0.841 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 0.632  ; 0.212  ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 0.049  ; -0.536 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; -0.006 ; -0.606 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 0.632  ; 0.212  ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 0.010  ; -0.312 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; -0.478 ; -0.723 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; -0.581 ; -1.081 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; -0.639 ; -0.986 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; -0.248 ; -0.706 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; -0.597 ; -1.040 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; -0.285 ; -0.604 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; -0.567 ; -0.876 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; -0.740 ; -1.188 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; -0.356 ; -0.662 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; 0.010  ; -0.312 ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -231,65 +231,65 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 10.506 ; 9.627  ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 10.211 ; 9.444  ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 8.529  ; 8.423  ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 8.922  ; 8.624  ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 10.506 ; 9.627  ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 9.533  ; 8.967  ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 9.582  ; 8.967  ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 8.836  ; 8.669  ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 9.775  ; 9.142  ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 9.775  ; 9.142  ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 8.826  ; 8.582  ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 9.147  ; 8.649  ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 8.467  ; 8.280  ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 9.600  ; 8.969  ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 9.382  ; 8.900  ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 8.996  ; 8.673  ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 9.173  ; 8.660  ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 8.436  ; 8.300  ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 9.141  ; 8.631  ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 9.172  ; 8.654  ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 9.173  ; 8.660  ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 8.701  ; 8.439  ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 8.205  ; 8.093  ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 8.669  ; 8.409  ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 10.169 ; 9.372  ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 8.619  ; 8.344  ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 9.146  ; 8.600  ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 9.989  ; 9.248  ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 10.156 ; 9.372  ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 9.078  ; 8.574  ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 8.743  ; 8.444  ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 10.169 ; 9.348  ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 9.736  ; 9.085  ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 8.877  ; 8.533  ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 9.397  ; 8.841  ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 9.736  ; 9.085  ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 8.798  ; 8.558  ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 8.805  ; 8.459  ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 9.454  ; 8.885  ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 8.392  ; 8.192  ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 9.782  ; 9.191  ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 8.269  ; 8.133  ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 8.231  ; 8.056  ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 8.298  ; 8.115  ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 8.260  ; 8.106  ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 9.782  ; 9.191  ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 8.280  ; 8.111  ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 9.525  ; 8.924  ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 10.700 ; 11.264 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 10.441 ; 10.992 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 10.377 ; 10.902 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 10.473 ; 11.138 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 8.889  ; 9.523  ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 10.205 ; 10.729 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 8.775  ; 9.218  ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 10.700 ; 11.264 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 8.343  ; 8.505  ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 8.418  ; 8.682  ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 9.728  ; 10.639 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 9.862  ; 9.182  ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 9.648  ; 9.009  ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 8.773  ; 8.512  ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 9.862  ; 9.182  ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 9.450  ; 8.994  ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 9.472  ; 8.906  ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 9.528  ; 8.913  ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 9.358  ; 8.926  ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 10.135 ; 9.359  ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 10.135 ; 9.359  ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 9.123  ; 8.707  ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 9.192  ; 8.663  ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 8.539  ; 8.341  ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 8.917  ; 8.579  ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 9.420  ; 8.879  ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 8.963  ; 8.623  ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 9.325  ; 8.818  ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 9.325  ; 8.818  ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 8.844  ; 8.441  ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 8.256  ; 8.118  ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 8.558  ; 8.292  ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 8.638  ; 8.372  ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 8.539  ; 8.273  ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 8.600  ; 8.342  ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 10.025 ; 9.262  ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 8.646  ; 8.359  ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 9.130  ; 8.593  ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 8.715  ; 8.488  ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 10.025 ; 9.262  ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 9.055  ; 8.561  ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 9.871  ; 9.129  ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 8.556  ; 8.394  ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 9.284  ; 8.718  ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 8.774  ; 8.474  ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 8.800  ; 8.547  ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 8.897  ; 8.531  ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 8.366  ; 8.269  ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 9.284  ; 8.718  ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 8.518  ; 8.314  ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 8.793  ; 8.397  ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 9.837  ; 9.128  ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 8.973  ; 8.493  ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 8.363  ; 8.180  ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 8.639  ; 8.342  ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 9.005  ; 8.518  ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 9.837  ; 9.128  ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 9.017  ; 8.521  ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 9.289  ; 8.781  ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 10.602 ; 11.143 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 10.165 ; 10.530 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 10.547 ; 11.143 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 10.065 ; 10.482 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 9.630  ; 10.482 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 10.257 ; 10.815 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 8.608  ; 9.016  ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 10.602 ; 11.046 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 9.599  ; 10.507 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 9.227  ; 9.985  ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 8.524  ; 8.702  ; Fall       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -298,65 +298,65 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 7.897 ; 7.825 ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 9.182 ; 8.660 ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 7.897 ; 7.825 ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 8.280 ; 8.023 ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 9.492 ; 8.848 ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 8.617 ; 8.247 ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 8.640 ; 8.239 ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 8.204 ; 8.056 ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 7.836 ; 7.685 ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 8.935 ; 8.449 ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 8.199 ; 7.977 ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 8.272 ; 7.952 ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 7.836 ; 7.685 ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 8.658 ; 8.242 ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 8.570 ; 8.221 ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 8.233 ; 8.008 ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 7.623 ; 7.531 ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 7.806 ; 7.711 ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 8.236 ; 7.927 ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 8.268 ; 7.959 ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 8.284 ; 7.963 ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 7.979 ; 7.815 ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 7.623 ; 7.531 ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 7.941 ; 7.782 ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 7.894 ; 7.716 ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 7.894 ; 7.716 ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 8.239 ; 7.894 ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 9.020 ; 8.492 ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 9.149 ; 8.594 ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 8.191 ; 7.877 ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 8.003 ; 7.799 ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 9.164 ; 8.578 ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 7.683 ; 7.566 ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 8.135 ; 7.888 ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 8.477 ; 8.116 ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 8.756 ; 8.336 ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 8.135 ; 7.948 ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 8.062 ; 7.822 ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 8.543 ; 8.167 ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 7.683 ; 7.566 ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 7.555 ; 7.457 ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 7.688 ; 7.570 ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 7.555 ; 7.457 ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 7.621 ; 7.500 ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 7.579 ; 7.499 ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 8.931 ; 8.484 ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 7.591 ; 7.504 ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 8.562 ; 8.188 ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 7.749 ; 7.887 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 8.714 ; 9.197 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 8.656 ; 9.113 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 8.742 ; 9.323 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 8.177 ; 8.656 ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 8.499 ; 8.954 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 8.096 ; 8.452 ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 8.899 ; 9.314 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 7.749 ; 7.887 ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 7.776 ; 7.945 ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 8.925 ; 9.582 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 8.054 ; 7.874 ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 8.718 ; 8.284 ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 8.054 ; 7.874 ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 8.900 ; 8.434 ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 8.747 ; 8.350 ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 8.556 ; 8.186 ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 8.586 ; 8.185 ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 8.661 ; 8.286 ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 7.894 ; 7.746 ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 9.139 ; 8.591 ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 8.357 ; 8.052 ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 8.302 ; 7.969 ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 7.894 ; 7.746 ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 8.171 ; 7.938 ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 8.498 ; 8.152 ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 8.227 ; 7.980 ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 7.570 ; 7.507 ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 8.392 ; 8.090 ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 7.983 ; 7.757 ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 7.570 ; 7.507 ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 7.854 ; 7.677 ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 7.911 ; 7.746 ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 7.814 ; 7.646 ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 7.873 ; 7.717 ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 7.899 ; 7.717 ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 7.919 ; 7.717 ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 8.224 ; 7.893 ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 8.062 ; 7.883 ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 9.057 ; 8.509 ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 8.175 ; 7.869 ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 8.858 ; 8.366 ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 7.899 ; 7.778 ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 7.742 ; 7.678 ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 8.138 ; 7.878 ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 8.059 ; 7.891 ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 8.133 ; 7.882 ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 7.742 ; 7.678 ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 8.368 ; 8.006 ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 7.871 ; 7.718 ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 7.933 ; 7.714 ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 7.665 ; 7.565 ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 8.095 ; 7.801 ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 7.665 ; 7.565 ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 7.897 ; 7.709 ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 8.118 ; 7.821 ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 8.871 ; 8.386 ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 8.118 ; 7.820 ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 8.385 ; 8.071 ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 7.906 ; 8.043 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 8.463 ; 8.761 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 8.808 ; 9.326 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 8.348 ; 8.672 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 8.872 ; 9.553 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 8.548 ; 9.033 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 7.978 ; 8.322 ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 8.820 ; 9.138 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 8.809 ; 9.473 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 8.476 ; 9.020 ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 7.906 ; 8.043 ; Fall       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -366,13 +366,13 @@ No paths to report.
 No synchronizer chains to report.
 
 
-+------------------------------------------------+
-; Slow 1100mV 0C Model Fmax Summary              ;
-+----------+-----------------+------------+------+
-; Fmax     ; Restricted Fmax ; Clock Name ; Note ;
-+----------+-----------------+------------+------+
-; 62.2 MHz ; 62.2 MHz        ; CLOCK_50   ;      ;
-+----------+-----------------+------------+------+
++-------------------------------------------------+
+; Slow 1100mV 0C Model Fmax Summary               ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 59.05 MHz ; 59.05 MHz       ; CLOCK_50   ;      ;
++-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -381,7 +381,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+---------+---------------+
 ; Clock    ; Slack   ; End Point TNS ;
 +----------+---------+---------------+
-; CLOCK_50 ; -12.440 ; -7251.558     ;
+; CLOCK_50 ; -12.667 ; -6897.400     ;
 +----------+---------+---------------+
 
 
@@ -390,7 +390,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.404 ; 0.000          ;
+; CLOCK_50 ; 0.399 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -411,7 +411,7 @@ No paths to report.
 +----------+--------+------------------------------+
 ; Clock    ; Slack  ; End Point TNS                ;
 +----------+--------+------------------------------+
-; CLOCK_50 ; -2.174 ; -1266.961                    ;
+; CLOCK_50 ; -2.174 ; -1275.296                    ;
 +----------+--------+------------------------------+
 
 
@@ -420,21 +420,21 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 4.355 ; 5.229 ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 4.355 ; 5.229 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 4.294 ; 4.942 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 3.657 ; 4.124 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 5.965 ; 6.862 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 4.577 ; 5.425 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; 4.588 ; 5.171 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; 4.990 ; 5.495 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; 4.856 ; 5.473 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; 5.629 ; 6.271 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; 5.318 ; 6.190 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; 5.022 ; 5.531 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; 5.965 ; 6.862 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; 4.956 ; 5.441 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; 4.891 ; 5.509 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 4.783 ; 5.694 ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 4.613 ; 5.389 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; 4.783 ; 5.694 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 3.996 ; 4.638 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 6.764 ; 7.658 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 4.716 ; 5.072 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; 5.515 ; 6.133 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; 5.183 ; 5.878 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; 5.183 ; 5.751 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; 5.449 ; 5.980 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; 5.421 ; 6.005 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; 6.764 ; 7.658 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; 6.310 ; 7.161 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; 5.258 ; 5.800 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; 5.166 ; 5.515 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -443,21 +443,21 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 0.791  ; 0.340  ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 0.437  ; -0.194 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 0.307  ; -0.191 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 0.791  ; 0.340  ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 0.174  ; -0.185 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; -0.790 ; -1.336 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; -0.307 ; -0.775 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; 0.174  ; -0.185 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; -0.465 ; -0.987 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; -0.476 ; -0.922 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; -0.045 ; -0.509 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; 0.023  ; -0.305 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; -0.932 ; -1.608 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; 0.063  ; -0.307 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; -0.245 ; -0.710 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 0.772  ; 0.352  ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 0.214  ; -0.359 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; 0.143  ; -0.467 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 0.772  ; 0.352  ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 0.223  ; -0.118 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; -0.256 ; -0.531 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; -0.469 ; -0.979 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; -0.435 ; -0.825 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; -0.051 ; -0.518 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; -0.386 ; -0.873 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; -0.071 ; -0.418 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; -0.330 ; -0.703 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; -0.627 ; -1.089 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; -0.169 ; -0.514 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; 0.223  ; -0.118 ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -466,65 +466,65 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 10.344 ; 9.373  ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 10.019 ; 9.159  ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 8.254  ; 8.049  ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 8.682  ; 8.292  ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 10.344 ; 9.373  ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 9.339  ; 8.693  ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 9.397  ; 8.704  ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 8.527  ; 8.258  ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 9.645  ; 8.929  ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 9.645  ; 8.929  ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 8.630  ; 8.303  ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 9.022  ; 8.451  ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 8.303  ; 8.041  ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 9.422  ; 8.714  ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 9.185  ; 8.639  ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 8.741  ; 8.345  ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 8.975  ; 8.381  ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 8.140  ; 7.939  ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 8.938  ; 8.361  ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 8.975  ; 8.380  ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 8.964  ; 8.381  ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 8.472  ; 8.134  ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 7.945  ; 7.753  ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 8.435  ; 8.097  ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 10.066 ; 9.220  ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 8.403  ; 8.085  ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 9.014  ; 8.431  ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 9.861  ; 9.071  ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 10.025 ; 9.184  ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 8.943  ; 8.362  ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 8.541  ; 8.198  ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 10.066 ; 9.220  ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 9.556  ; 8.843  ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 8.609  ; 8.215  ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 9.272  ; 8.671  ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 9.556  ; 8.843  ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 8.507  ; 8.207  ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 8.567  ; 8.168  ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 9.264  ; 8.655  ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 8.236  ; 7.975  ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 9.590  ; 8.910  ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 8.023  ; 7.835  ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 8.070  ; 7.821  ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 8.142  ; 7.913  ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 8.034  ; 7.829  ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 9.590  ; 8.910  ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 8.048  ; 7.835  ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 9.350  ; 8.660  ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 10.425 ; 11.047 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 10.208 ; 10.813 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 10.131 ; 10.721 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 10.295 ; 10.977 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 8.646  ; 9.309  ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 9.980  ; 10.550 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 8.497  ; 8.994  ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 10.425 ; 11.047 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 8.022  ; 8.238  ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 8.185  ; 8.491  ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 9.512  ; 10.475 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 9.740  ; 8.976  ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 9.483  ; 8.772  ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 8.576  ; 8.239  ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 9.740  ; 8.976  ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 9.292  ; 8.737  ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 9.347  ; 8.701  ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 9.406  ; 8.713  ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 9.194  ; 8.661  ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 10.023 ; 9.166  ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 10.023 ; 9.166  ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 8.915  ; 8.413  ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 9.060  ; 8.463  ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 8.347  ; 8.057  ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 8.760  ; 8.337  ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 9.280  ; 8.651  ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 8.768  ; 8.341  ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 9.155  ; 8.592  ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 9.155  ; 8.592  ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 8.706  ; 8.236  ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 8.088  ; 7.874  ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 8.368  ; 8.022  ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 8.476  ; 8.133  ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 8.372  ; 8.033  ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 8.436  ; 8.097  ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 9.908  ; 9.089  ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 8.491  ; 8.154  ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 9.001  ; 8.420  ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 8.495  ; 8.212  ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 9.908  ; 9.089  ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 8.917  ; 8.348  ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 9.756  ; 8.948  ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 8.344  ; 8.115  ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 9.149  ; 8.536  ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 8.608  ; 8.253  ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 8.595  ; 8.294  ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 8.745  ; 8.327  ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 8.150  ; 7.982  ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 9.149  ; 8.536  ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 8.327  ; 8.066  ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 8.656  ; 8.226  ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 9.713  ; 8.932  ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 8.830  ; 8.304  ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 8.207  ; 7.948  ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 8.482  ; 8.135  ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 8.865  ; 8.328  ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 9.713  ; 8.932  ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 8.877  ; 8.344  ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 9.122  ; 8.546  ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 10.324 ; 10.974 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 9.853  ; 10.256 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 10.324 ; 10.974 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 9.737  ; 10.200 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 9.388  ; 10.288 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 10.037 ; 10.637 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 8.314  ; 8.771  ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 10.287 ; 10.780 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 9.473  ; 10.403 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 9.059  ; 9.866  ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 8.245  ; 8.490  ; Fall       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -533,65 +533,65 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 7.686 ; 7.523 ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 9.052 ; 8.438 ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 7.686 ; 7.523 ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 8.103 ; 7.758 ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 9.378 ; 8.652 ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 8.488 ; 8.034 ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 8.515 ; 8.036 ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 7.953 ; 7.721 ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 7.737 ; 7.512 ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 8.858 ; 8.294 ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 8.057 ; 7.766 ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 8.219 ; 7.814 ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 7.737 ; 7.512 ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 8.540 ; 8.047 ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 8.430 ; 8.019 ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 8.042 ; 7.748 ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 7.437 ; 7.263 ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 7.579 ; 7.423 ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 8.103 ; 7.720 ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 8.136 ; 7.744 ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 8.152 ; 7.748 ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 7.821 ; 7.576 ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 7.437 ; 7.263 ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 7.774 ; 7.536 ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 7.751 ; 7.522 ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 7.751 ; 7.522 ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 8.174 ; 7.784 ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 8.954 ; 8.376 ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 9.085 ; 8.467 ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 8.130 ; 7.729 ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 7.864 ; 7.623 ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 9.110 ; 8.504 ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 7.596 ; 7.418 ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 7.937 ; 7.641 ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 8.411 ; 8.006 ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 8.640 ; 8.154 ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 7.917 ; 7.669 ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 7.899 ; 7.599 ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 8.418 ; 7.997 ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 7.596 ; 7.418 ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 7.425 ; 7.287 ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 7.510 ; 7.340 ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 7.463 ; 7.287 ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 7.533 ; 7.365 ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 7.425 ; 7.289 ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 8.792 ; 8.264 ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 7.432 ; 7.296 ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 8.457 ; 7.991 ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 7.499 ; 7.684 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 8.571 ; 9.096 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 8.499 ; 9.011 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 8.648 ; 9.236 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 8.002 ; 8.502 ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 8.362 ; 8.855 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 7.889 ; 8.282 ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 8.719 ; 9.191 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 7.499 ; 7.684 ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 7.609 ; 7.817 ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 8.764 ; 9.472 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 7.918 ; 7.670 ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 8.618 ; 8.112 ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 7.918 ; 7.670 ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 8.849 ; 8.290 ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 8.645 ; 8.159 ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 8.497 ; 8.043 ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 8.523 ; 8.044 ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 8.555 ; 8.088 ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 7.781 ; 7.534 ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 9.080 ; 8.457 ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 8.217 ; 7.830 ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 8.240 ; 7.827 ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 7.781 ; 7.534 ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 8.082 ; 7.763 ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 8.434 ; 7.989 ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 8.093 ; 7.767 ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 7.473 ; 7.330 ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 8.291 ; 7.926 ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 7.915 ; 7.613 ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 7.473 ; 7.330 ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 7.753 ; 7.479 ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 7.814 ; 7.573 ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 7.718 ; 7.474 ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 7.776 ; 7.538 ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 7.751 ; 7.572 ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 7.835 ; 7.580 ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 8.159 ; 7.778 ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 7.912 ; 7.678 ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 8.996 ; 8.392 ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 8.111 ; 7.719 ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 8.807 ; 8.244 ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 7.751 ; 7.572 ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 7.591 ; 7.462 ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 8.033 ; 7.721 ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 7.917 ; 7.708 ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 8.042 ; 7.740 ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 7.591 ; 7.462 ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 8.302 ; 7.884 ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 7.756 ; 7.538 ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 7.865 ; 7.602 ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 7.577 ; 7.396 ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 8.026 ; 7.675 ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 7.577 ; 7.396 ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 7.804 ; 7.564 ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 8.052 ; 7.693 ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 8.802 ; 8.246 ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 8.046 ; 7.704 ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 8.279 ; 7.898 ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 7.697 ; 7.894 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 8.246 ; 8.578 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 8.672 ; 9.235 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 8.120 ; 8.483 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 8.689 ; 9.414 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 8.416 ; 8.933 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 7.754 ; 8.139 ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 8.602 ; 8.964 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 8.735 ; 9.415 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 8.366 ; 8.960 ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 7.697 ; 7.894 ; Fall       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -606,7 +606,7 @@ No synchronizer chains to report.
 +----------+--------+-----------------+
 ; Clock    ; Slack  ; End Point TNS   ;
 +----------+--------+-----------------+
-; CLOCK_50 ; -7.521 ; -3879.446       ;
+; CLOCK_50 ; -7.724 ; -3672.893       ;
 +----------+--------+-----------------+
 
 
@@ -615,7 +615,7 @@ No synchronizer chains to report.
 +----------+-------+-----------------+
 ; Clock    ; Slack ; End Point TNS   ;
 +----------+-------+-----------------+
-; CLOCK_50 ; 0.251 ; 0.000           ;
+; CLOCK_50 ; 0.246 ; 0.000           ;
 +----------+-------+-----------------+
 
 
@@ -636,7 +636,7 @@ No paths to report.
 +----------+--------+-------------------------------+
 ; Clock    ; Slack  ; End Point TNS                 ;
 +----------+--------+-------------------------------+
-; CLOCK_50 ; -2.174 ; -372.708                      ;
+; CLOCK_50 ; -2.174 ; -366.494                      ;
 +----------+--------+-------------------------------+
 
 
@@ -645,21 +645,21 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 2.774 ; 3.834 ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 2.774 ; 3.834 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 2.397 ; 3.142 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 2.111 ; 2.765 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 3.606 ; 4.808 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 2.905 ; 3.938 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; 2.919 ; 3.802 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; 2.804 ; 3.490 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; 2.806 ; 3.643 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; 3.332 ; 4.255 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; 3.310 ; 4.401 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; 3.083 ; 3.891 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; 3.606 ; 4.808 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; 3.021 ; 3.781 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; 2.995 ; 3.848 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 3.133 ; 4.261 ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 2.792 ; 3.711 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; 3.133 ; 4.261 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 2.463 ; 3.189 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 4.114 ; 5.244 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 2.800 ; 3.471 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; 3.293 ; 4.212 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; 3.341 ; 4.380 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; 3.171 ; 3.976 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; 3.257 ; 4.057 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; 3.349 ; 4.214 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; 4.114 ; 5.244 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; 3.846 ; 4.921 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; 3.217 ; 4.003 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; 3.034 ; 3.721 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -668,21 +668,21 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 0.313  ; -0.316 ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 0.101  ; -0.661 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 0.119  ; -0.589 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 0.313  ; -0.316 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; -0.077 ; -0.713 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; -0.665 ; -1.470 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; -0.286 ; -1.015 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; -0.077 ; -0.713 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; -0.416 ; -1.176 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; -0.435 ; -1.151 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; -0.188 ; -0.886 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; -0.116 ; -0.714 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; -0.766 ; -1.639 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; -0.098 ; -0.741 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; -0.274 ; -0.991 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 0.375  ; -0.242 ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 0.004  ; -0.762 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; -0.101 ; -0.870 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 0.375  ; -0.242 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; -0.022 ; -0.618 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; -0.264 ; -0.837 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; -0.413 ; -1.178 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; -0.395 ; -1.068 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; -0.213 ; -0.902 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; -0.431 ; -1.143 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; -0.162 ; -0.788 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; -0.318 ; -0.951 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; -0.519 ; -1.253 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; -0.211 ; -0.849 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; -0.022 ; -0.618 ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -691,65 +691,65 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 6.988 ; 6.138 ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 6.775 ; 6.010 ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 5.420 ; 5.205 ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 5.786 ; 5.403 ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 6.988 ; 6.138 ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 6.297 ; 5.714 ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 6.319 ; 5.701 ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 5.632 ; 5.360 ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 6.499 ; 5.844 ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 6.499 ; 5.844 ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 5.719 ; 5.404 ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 6.047 ; 5.526 ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 5.531 ; 5.260 ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 6.342 ; 5.712 ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 6.167 ; 5.660 ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 5.819 ; 5.451 ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 6.028 ; 5.495 ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 5.398 ; 5.171 ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 5.987 ; 5.464 ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 6.028 ; 5.495 ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 6.004 ; 5.476 ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 5.629 ; 5.310 ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 5.236 ; 5.021 ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 5.621 ; 5.302 ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 6.874 ; 6.064 ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 5.638 ; 5.292 ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 6.089 ; 5.545 ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 6.728 ; 5.977 ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 6.830 ; 6.061 ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 5.994 ; 5.469 ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 5.696 ; 5.366 ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 6.874 ; 6.064 ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 6.458 ; 5.809 ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 5.758 ; 5.351 ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 6.285 ; 5.697 ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 6.458 ; 5.809 ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 5.672 ; 5.356 ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 5.737 ; 5.339 ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 6.279 ; 5.682 ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 5.488 ; 5.192 ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 6.470 ; 5.864 ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 5.333 ; 5.102 ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 5.333 ; 5.083 ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 5.430 ; 5.179 ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 5.340 ; 5.110 ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 6.470 ; 5.864 ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 5.374 ; 5.122 ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 6.254 ; 5.658 ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 6.649 ; 7.241 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 6.501 ; 7.090 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 6.468 ; 7.017 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 6.577 ; 7.241 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 5.630 ; 6.205 ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 6.393 ; 6.920 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 5.546 ; 5.960 ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 6.649 ; 7.239 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 5.197 ; 5.466 ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 5.333 ; 5.664 ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 6.297 ; 7.179 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 6.577 ; 5.892 ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 6.364 ; 5.741 ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 5.667 ; 5.353 ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 6.577 ; 5.892 ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 6.218 ; 5.696 ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 6.304 ; 5.721 ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 6.325 ; 5.707 ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 6.155 ; 5.653 ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 6.776 ; 6.012 ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 6.776 ; 6.012 ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 5.941 ; 5.490 ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 6.079 ; 5.536 ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 5.543 ; 5.245 ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 5.835 ; 5.446 ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 6.244 ; 5.678 ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 5.832 ; 5.436 ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 6.155 ; 5.643 ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 6.155 ; 5.643 ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 5.815 ; 5.377 ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 5.368 ; 5.149 ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 5.546 ; 5.206 ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 5.631 ; 5.305 ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 5.561 ; 5.237 ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 5.619 ; 5.308 ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 6.748 ; 6.006 ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 5.671 ; 5.303 ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 6.073 ; 5.535 ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 5.667 ; 5.342 ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 6.748 ; 6.006 ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 5.967 ; 5.452 ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 6.605 ; 5.882 ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 5.544 ; 5.265 ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 6.179 ; 5.608 ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 5.751 ; 5.359 ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 5.743 ; 5.413 ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 5.862 ; 5.453 ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 5.392 ; 5.192 ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 6.179 ; 5.608 ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 5.556 ; 5.236 ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 5.826 ; 5.377 ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 6.584 ; 5.884 ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 5.949 ; 5.457 ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 5.448 ; 5.192 ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 5.672 ; 5.326 ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 5.978 ; 5.474 ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 6.584 ; 5.884 ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 5.990 ; 5.464 ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 6.097 ; 5.588 ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 6.605 ; 7.210 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 6.234 ; 6.632 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 6.605 ; 7.210 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 6.162 ; 6.593 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 6.152 ; 6.967 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 6.441 ; 6.993 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 5.404 ; 5.796 ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 6.564 ; 7.048 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 6.241 ; 7.124 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 5.954 ; 6.714 ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 5.368 ; 5.642 ; Fall       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -758,65 +758,65 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 5.133 ; 4.947 ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 6.192 ; 5.624 ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 5.133 ; 4.947 ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 5.488 ; 5.142 ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 6.415 ; 5.753 ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 5.790 ; 5.365 ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 5.793 ; 5.346 ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 5.346 ; 5.096 ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 5.230 ; 4.994 ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 6.056 ; 5.519 ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 5.434 ; 5.141 ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 5.566 ; 5.189 ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 5.230 ; 4.994 ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 5.816 ; 5.358 ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 5.741 ; 5.341 ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 5.432 ; 5.143 ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 4.979 ; 4.785 ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 5.112 ; 4.920 ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 5.485 ; 5.123 ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 5.526 ; 5.161 ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 5.512 ; 5.140 ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 5.264 ; 5.025 ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 4.979 ; 4.785 ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 5.253 ; 5.016 ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 5.270 ; 5.004 ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 5.270 ; 5.004 ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 5.585 ; 5.201 ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 6.183 ; 5.604 ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 6.260 ; 5.675 ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 5.502 ; 5.132 ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 5.324 ; 5.071 ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 6.305 ; 5.682 ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 5.135 ; 4.908 ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 5.386 ; 5.058 ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 5.773 ; 5.343 ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 5.908 ; 5.442 ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 5.363 ; 5.091 ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 5.360 ; 5.049 ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 5.775 ; 5.333 ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 5.135 ; 4.908 ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 5.004 ; 4.816 ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 5.073 ; 4.862 ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 5.004 ; 4.816 ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 5.094 ; 4.898 ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 5.007 ; 4.839 ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 6.013 ; 5.524 ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 5.032 ; 4.847 ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 5.724 ; 5.304 ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 4.941 ; 5.188 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 5.626 ; 6.160 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 5.597 ; 6.090 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 5.695 ; 6.293 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 5.294 ; 5.749 ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 5.527 ; 5.999 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 5.233 ; 5.580 ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 5.727 ; 6.198 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 4.941 ; 5.188 ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 5.040 ; 5.295 ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 5.896 ; 6.576 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 5.311 ; 5.064 ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 5.851 ; 5.390 ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 5.311 ; 5.064 ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 6.040 ; 5.527 ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 5.876 ; 5.405 ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 5.796 ; 5.371 ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 5.799 ; 5.352 ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 5.819 ; 5.366 ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 5.241 ; 4.987 ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 6.214 ; 5.633 ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 5.556 ; 5.194 ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 5.585 ; 5.199 ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 5.241 ; 4.987 ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 5.454 ; 5.151 ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 5.734 ; 5.326 ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 5.467 ; 5.148 ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 5.029 ; 4.873 ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 5.641 ; 5.289 ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 5.346 ; 5.051 ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 5.029 ; 4.873 ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 5.198 ; 4.931 ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 5.264 ; 5.019 ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 5.195 ; 4.951 ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 5.251 ; 5.022 ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 5.237 ; 4.996 ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 5.304 ; 5.008 ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 5.570 ; 5.196 ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 5.362 ; 5.079 ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 6.204 ; 5.634 ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 5.482 ; 5.120 ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 6.032 ; 5.507 ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 5.237 ; 4.996 ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 5.109 ; 4.939 ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 5.455 ; 5.099 ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 5.369 ; 5.110 ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 5.469 ; 5.152 ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 5.109 ; 4.939 ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 5.670 ; 5.261 ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 5.252 ; 4.977 ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 5.355 ; 5.049 ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 5.097 ; 4.910 ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 5.463 ; 5.122 ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 5.097 ; 4.910 ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 5.293 ; 5.035 ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 5.485 ; 5.136 ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 6.040 ; 5.518 ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 5.492 ; 5.124 ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 5.601 ; 5.244 ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 5.097 ; 5.332 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 5.378 ; 5.726 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 5.719 ; 6.259 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 5.299 ; 5.661 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 5.785 ; 6.466 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 5.571 ; 6.064 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 5.128 ; 5.473 ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 5.651 ; 6.034 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 5.844 ; 6.534 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 5.581 ; 6.169 ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 5.097 ; 5.332 ; Fall       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -831,7 +831,7 @@ No synchronizer chains to report.
 +----------+--------+----------------+
 ; Clock    ; Slack  ; End Point TNS  ;
 +----------+--------+----------------+
-; CLOCK_50 ; -6.967 ; -3520.736      ;
+; CLOCK_50 ; -7.082 ; -3321.113      ;
 +----------+--------+----------------+
 
 
@@ -840,7 +840,7 @@ No synchronizer chains to report.
 +----------+-------+----------------+
 ; Clock    ; Slack ; End Point TNS  ;
 +----------+-------+----------------+
-; CLOCK_50 ; 0.224 ; 0.000          ;
+; CLOCK_50 ; 0.221 ; 0.000          ;
 +----------+-------+----------------+
 
 
@@ -861,7 +861,7 @@ No paths to report.
 +----------+--------+------------------------------+
 ; Clock    ; Slack  ; End Point TNS                ;
 +----------+--------+------------------------------+
-; CLOCK_50 ; -2.174 ; -393.263                     ;
+; CLOCK_50 ; -2.174 ; -389.167                     ;
 +----------+--------+------------------------------+
 
 
@@ -870,21 +870,21 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 2.457 ; 3.459 ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 2.457 ; 3.459 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 2.144 ; 2.883 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 1.852 ; 2.502 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 3.354 ; 4.463 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 2.631 ; 3.613 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; 2.650 ; 3.482 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; 2.532 ; 3.222 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; 2.552 ; 3.364 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; 3.060 ; 3.941 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; 2.978 ; 4.023 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; 2.760 ; 3.573 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; 3.354 ; 4.463 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; 2.737 ; 3.479 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; 2.700 ; 3.529 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 2.874 ; 3.933 ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 2.537 ; 3.417 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; 2.874 ; 3.933 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 2.232 ; 2.957 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 3.818 ; 4.888 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 2.528 ; 3.204 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; 3.062 ; 3.927 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; 3.034 ; 4.042 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; 2.913 ; 3.698 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; 2.984 ; 3.775 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; 3.046 ; 3.883 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; 3.818 ; 4.888 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; 3.579 ; 4.598 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; 2.940 ; 3.723 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; 2.768 ; 3.457 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -893,21 +893,21 @@ No paths to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 0.399  ; -0.222 ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 0.198  ; -0.539 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 0.187  ; -0.498 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 0.399  ; -0.222 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 0.018  ; -0.616 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; -0.575 ; -1.352 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; -0.227 ; -0.918 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; 0.018  ; -0.616 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; -0.340 ; -1.082 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; -0.359 ; -1.058 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; -0.088 ; -0.771 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; -0.026 ; -0.629 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; -0.698 ; -1.515 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; -0.017 ; -0.651 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; -0.184 ; -0.881 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 0.425  ; -0.185 ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 0.090  ; -0.642 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; -0.033 ; -0.782 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 0.425  ; -0.185 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 0.086  ; -0.516 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; -0.133 ; -0.719 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; -0.346 ; -1.077 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; -0.292 ; -0.971 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; -0.130 ; -0.803 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; -0.318 ; -1.020 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; -0.039 ; -0.666 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; -0.201 ; -0.854 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; -0.441 ; -1.152 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; -0.108 ; -0.747 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; 0.086  ; -0.516 ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -916,65 +916,65 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 6.606 ; 5.912 ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 6.412 ; 5.781 ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 5.112 ; 4.926 ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 5.466 ; 5.145 ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 6.606 ; 5.912 ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 5.965 ; 5.488 ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 5.989 ; 5.488 ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 5.274 ; 5.033 ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 6.144 ; 5.604 ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 6.144 ; 5.604 ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 5.381 ; 5.111 ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 5.733 ; 5.316 ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 5.229 ; 5.011 ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 6.009 ; 5.495 ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 5.834 ; 5.421 ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 5.483 ; 5.177 ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 5.705 ; 5.270 ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 5.077 ; 4.863 ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 5.677 ; 5.256 ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 5.705 ; 5.270 ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 5.692 ; 5.269 ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 5.338 ; 5.081 ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 4.948 ; 4.770 ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 5.318 ; 5.061 ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 6.507 ; 5.820 ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 5.336 ; 5.034 ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 5.762 ; 5.310 ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 6.360 ; 5.722 ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 6.448 ; 5.804 ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 5.681 ; 5.258 ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 5.360 ; 5.073 ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 6.507 ; 5.820 ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 6.110 ; 5.565 ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 5.423 ; 5.060 ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 5.953 ; 5.450 ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 6.110 ; 5.565 ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 5.334 ; 5.046 ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 5.425 ; 5.086 ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 5.949 ; 5.444 ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 5.195 ; 4.930 ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 6.110 ; 5.613 ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 5.042 ; 4.838 ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 5.046 ; 4.845 ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 5.144 ; 4.933 ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 5.057 ; 4.861 ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 6.110 ; 5.613 ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 5.092 ; 4.867 ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 5.899 ; 5.400 ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 6.338 ; 6.893 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 6.229 ; 6.744 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 6.203 ; 6.670 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 6.331 ; 6.893 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 5.319 ; 5.829 ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 6.147 ; 6.586 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 5.222 ; 5.597 ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 6.338 ; 6.859 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 4.892 ; 5.149 ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 5.048 ; 5.340 ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 6.044 ; 6.789 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 6.210 ; 5.649 ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 6.003 ; 5.493 ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 5.342 ; 5.087 ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 6.210 ; 5.649 ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 5.871 ; 5.436 ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 5.966 ; 5.489 ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 5.993 ; 5.492 ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 5.802 ; 5.380 ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 6.414 ; 5.783 ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 6.414 ; 5.783 ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 5.585 ; 5.203 ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 5.762 ; 5.325 ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 5.231 ; 4.978 ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 5.524 ; 5.209 ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 5.902 ; 5.437 ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 5.489 ; 5.160 ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 5.801 ; 5.365 ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 5.801 ; 5.365 ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 5.520 ; 5.169 ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 5.084 ; 4.909 ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 5.243 ; 4.969 ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 5.337 ; 5.073 ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 5.257 ; 4.996 ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 5.317 ; 5.063 ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 6.374 ; 5.754 ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 5.364 ; 5.041 ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 5.749 ; 5.297 ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 5.327 ; 5.025 ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 6.374 ; 5.754 ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 5.655 ; 5.239 ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 6.238 ; 5.626 ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 5.217 ; 4.952 ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 5.843 ; 5.367 ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 5.428 ; 5.080 ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 5.409 ; 5.110 ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 5.540 ; 5.195 ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 5.074 ; 4.881 ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 5.843 ; 5.367 ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 5.244 ; 4.954 ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 5.525 ; 5.143 ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 6.225 ; 5.649 ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 5.627 ; 5.216 ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 5.159 ; 4.957 ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 5.364 ; 5.072 ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 5.659 ; 5.235 ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 6.225 ; 5.649 ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 5.674 ; 5.222 ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 5.756 ; 5.341 ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 6.346 ; 6.858 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 5.906 ; 6.265 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 6.346 ; 6.858 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 5.845 ; 6.228 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 5.883 ; 6.591 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 6.197 ; 6.660 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 5.079 ; 5.439 ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 6.226 ; 6.659 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 5.990 ; 6.740 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 5.701 ; 6.345 ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 5.057 ; 5.308 ; Fall       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -983,65 +983,65 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 4.855 ; 4.701 ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 5.887 ; 5.425 ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 4.855 ; 4.701 ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 5.199 ; 4.912 ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 6.083 ; 5.555 ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 5.508 ; 5.166 ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 5.514 ; 5.161 ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 5.016 ; 4.804 ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 4.955 ; 4.770 ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 5.740 ; 5.305 ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 5.117 ; 4.875 ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 5.302 ; 5.005 ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 4.955 ; 4.770 ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 5.533 ; 5.168 ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 5.447 ; 5.129 ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 5.133 ; 4.902 ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 4.725 ; 4.564 ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 4.825 ; 4.644 ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 5.228 ; 4.945 ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 5.256 ; 4.963 ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 5.256 ; 4.962 ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 5.014 ; 4.825 ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 4.725 ; 4.564 ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 4.990 ; 4.804 ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 5.011 ; 4.774 ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 5.011 ; 4.774 ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 5.306 ; 4.991 ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 5.864 ; 5.375 ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 5.932 ; 5.446 ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 5.241 ; 4.947 ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 5.021 ; 4.808 ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 5.983 ; 5.463 ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 4.879 ; 4.675 ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 5.091 ; 4.799 ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 5.487 ; 5.121 ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 5.615 ; 5.227 ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 5.062 ; 4.813 ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 5.093 ; 4.826 ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 5.494 ; 5.122 ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 4.879 ; 4.675 ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 4.752 ; 4.605 ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 4.813 ; 4.627 ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 4.752 ; 4.605 ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 4.841 ; 4.679 ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 4.762 ; 4.618 ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 5.693 ; 5.303 ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 4.789 ; 4.622 ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 5.423 ; 5.075 ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 4.668 ; 4.900 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 5.381 ; 5.841 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 5.358 ; 5.772 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 5.474 ; 5.973 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 5.014 ; 5.414 ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 5.306 ; 5.693 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 4.942 ; 5.245 ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 5.447 ; 5.865 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 4.668 ; 4.900 ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 4.782 ; 5.006 ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 5.671 ; 6.239 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 5.019 ; 4.828 ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 5.540 ; 5.171 ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 5.019 ; 4.828 ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 5.729 ; 5.311 ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 5.561 ; 5.174 ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 5.507 ; 5.165 ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 5.516 ; 5.163 ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 5.497 ; 5.123 ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 4.967 ; 4.747 ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 5.899 ; 5.432 ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 5.239 ; 4.936 ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 5.321 ; 5.014 ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 4.967 ; 4.747 ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 5.181 ; 4.940 ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 5.447 ; 5.113 ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 5.158 ; 4.900 ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 4.781 ; 4.660 ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 5.339 ; 5.040 ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 5.098 ; 4.868 ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 4.781 ; 4.660 ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 4.943 ; 4.723 ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 5.006 ; 4.814 ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 4.930 ; 4.737 ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 4.985 ; 4.803 ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 4.942 ; 4.714 ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 5.036 ; 4.775 ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 5.294 ; 4.983 ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 5.056 ; 4.791 ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 5.878 ; 5.407 ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 5.222 ; 4.933 ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 5.721 ; 5.278 ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 4.942 ; 4.714 ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 4.820 ; 4.657 ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 5.162 ; 4.846 ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 5.069 ; 4.839 ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 5.184 ; 4.920 ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 4.820 ; 4.657 ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 5.387 ; 5.047 ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 4.979 ; 4.723 ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 5.101 ; 4.840 ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 4.844 ; 4.701 ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 5.194 ; 4.907 ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 4.844 ; 4.701 ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 5.022 ; 4.806 ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 5.219 ; 4.923 ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 5.728 ; 5.309 ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 5.224 ; 4.908 ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 5.306 ; 5.025 ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 4.815 ; 5.027 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 5.081 ; 5.393 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 5.486 ; 5.938 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 5.014 ; 5.334 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 5.544 ; 6.132 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 5.353 ; 5.759 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 4.833 ; 5.147 ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 5.346 ; 5.689 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 5.620 ; 6.196 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 5.355 ; 5.850 ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 4.815 ; 5.027 ; Fall       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1056,10 +1056,10 @@ No synchronizer chains to report.
 +------------------+-----------+-------+----------+---------+---------------------+
 ; Clock            ; Setup     ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+-----------+-------+----------+---------+---------------------+
-; Worst-case Slack ; -12.563   ; 0.224 ; N/A      ; N/A     ; -2.174              ;
-;  CLOCK_50        ; -12.563   ; 0.224 ; N/A      ; N/A     ; -2.174              ;
-; Design-wide TNS  ; -7251.558 ; 0.0   ; 0.0      ; 0.0     ; -1266.961           ;
-;  CLOCK_50        ; -7251.558 ; 0.000 ; N/A      ; N/A     ; -1266.961           ;
+; Worst-case Slack ; -12.667   ; 0.221 ; N/A      ; N/A     ; -2.174              ;
+;  CLOCK_50        ; -12.667   ; 0.221 ; N/A      ; N/A     ; -2.174              ;
+; Design-wide TNS  ; -6897.4   ; 0.0   ; 0.0      ; 0.0     ; -1275.296           ;
+;  CLOCK_50        ; -6897.400 ; 0.000 ; N/A      ; N/A     ; -1275.296           ;
 +------------------+-----------+-------+----------+---------+---------------------+
 
 
@@ -1068,21 +1068,21 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 4.672 ; 5.517 ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 4.672 ; 5.517 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 4.517 ; 5.189 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 3.936 ; 4.439 ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 6.081 ; 6.978 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; 4.845 ; 5.627 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; 4.830 ; 5.377 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; 5.248 ; 5.722 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; 5.092 ; 5.680 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; 5.776 ; 6.391 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; 5.592 ; 6.412 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; 5.353 ; 5.798 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; 6.081 ; 6.978 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; 5.168 ; 5.627 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; 5.123 ; 5.706 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 5.027 ; 5.892 ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 4.781 ; 5.551 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; 5.027 ; 5.892 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 4.173 ; 4.771 ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 6.961 ; 7.786 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; 4.941 ; 5.243 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; 5.596 ; 6.219 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; 5.455 ; 6.133 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; 5.370 ; 5.893 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; 5.665 ; 6.130 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; 5.689 ; 6.218 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; 6.961 ; 7.786 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; 6.451 ; 7.272 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; 5.440 ; 5.928 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; 5.339 ; 5.663 ; Rise       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1091,21 +1091,21 @@ No synchronizer chains to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; KEY[*]    ; CLOCK_50   ; 0.791  ; 0.340  ; Rise       ; CLOCK_50        ;
-;  KEY[1]   ; CLOCK_50   ; 0.437  ; -0.194 ; Rise       ; CLOCK_50        ;
-;  KEY[2]   ; CLOCK_50   ; 0.307  ; -0.191 ; Rise       ; CLOCK_50        ;
-;  KEY[3]   ; CLOCK_50   ; 0.791  ; 0.340  ; Rise       ; CLOCK_50        ;
-; SW[*]     ; CLOCK_50   ; 0.174  ; -0.185 ; Rise       ; CLOCK_50        ;
-;  SW[0]    ; CLOCK_50   ; -0.575 ; -1.336 ; Rise       ; CLOCK_50        ;
-;  SW[1]    ; CLOCK_50   ; -0.227 ; -0.775 ; Rise       ; CLOCK_50        ;
-;  SW[2]    ; CLOCK_50   ; 0.174  ; -0.185 ; Rise       ; CLOCK_50        ;
-;  SW[3]    ; CLOCK_50   ; -0.340 ; -0.987 ; Rise       ; CLOCK_50        ;
-;  SW[4]    ; CLOCK_50   ; -0.359 ; -0.922 ; Rise       ; CLOCK_50        ;
-;  SW[5]    ; CLOCK_50   ; -0.045 ; -0.509 ; Rise       ; CLOCK_50        ;
-;  SW[6]    ; CLOCK_50   ; 0.023  ; -0.305 ; Rise       ; CLOCK_50        ;
-;  SW[7]    ; CLOCK_50   ; -0.698 ; -1.515 ; Rise       ; CLOCK_50        ;
-;  SW[8]    ; CLOCK_50   ; 0.063  ; -0.307 ; Rise       ; CLOCK_50        ;
-;  SW[9]    ; CLOCK_50   ; -0.184 ; -0.710 ; Rise       ; CLOCK_50        ;
+; KEY[*]    ; CLOCK_50   ; 0.772  ; 0.352  ; Rise       ; CLOCK_50        ;
+;  KEY[1]   ; CLOCK_50   ; 0.214  ; -0.359 ; Rise       ; CLOCK_50        ;
+;  KEY[2]   ; CLOCK_50   ; 0.143  ; -0.467 ; Rise       ; CLOCK_50        ;
+;  KEY[3]   ; CLOCK_50   ; 0.772  ; 0.352  ; Rise       ; CLOCK_50        ;
+; SW[*]     ; CLOCK_50   ; 0.223  ; -0.118 ; Rise       ; CLOCK_50        ;
+;  SW[0]    ; CLOCK_50   ; -0.133 ; -0.531 ; Rise       ; CLOCK_50        ;
+;  SW[1]    ; CLOCK_50   ; -0.346 ; -0.979 ; Rise       ; CLOCK_50        ;
+;  SW[2]    ; CLOCK_50   ; -0.292 ; -0.825 ; Rise       ; CLOCK_50        ;
+;  SW[3]    ; CLOCK_50   ; -0.051 ; -0.518 ; Rise       ; CLOCK_50        ;
+;  SW[4]    ; CLOCK_50   ; -0.318 ; -0.873 ; Rise       ; CLOCK_50        ;
+;  SW[5]    ; CLOCK_50   ; -0.039 ; -0.418 ; Rise       ; CLOCK_50        ;
+;  SW[6]    ; CLOCK_50   ; -0.201 ; -0.703 ; Rise       ; CLOCK_50        ;
+;  SW[7]    ; CLOCK_50   ; -0.441 ; -1.089 ; Rise       ; CLOCK_50        ;
+;  SW[8]    ; CLOCK_50   ; -0.108 ; -0.514 ; Rise       ; CLOCK_50        ;
+;  SW[9]    ; CLOCK_50   ; 0.223  ; -0.118 ; Rise       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -1114,65 +1114,65 @@ No synchronizer chains to report.
 +-----------+------------+--------+--------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-----------+------------+--------+--------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 10.506 ; 9.627  ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 10.211 ; 9.444  ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 8.529  ; 8.423  ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 8.922  ; 8.624  ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 10.506 ; 9.627  ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 9.533  ; 8.967  ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 9.582  ; 8.967  ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 8.836  ; 8.669  ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 9.775  ; 9.142  ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 9.775  ; 9.142  ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 8.826  ; 8.582  ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 9.147  ; 8.649  ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 8.467  ; 8.280  ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 9.600  ; 8.969  ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 9.382  ; 8.900  ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 8.996  ; 8.673  ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 9.173  ; 8.660  ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 8.436  ; 8.300  ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 9.141  ; 8.631  ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 9.172  ; 8.654  ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 9.173  ; 8.660  ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 8.701  ; 8.439  ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 8.205  ; 8.093  ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 8.669  ; 8.409  ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 10.169 ; 9.372  ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 8.619  ; 8.344  ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 9.146  ; 8.600  ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 9.989  ; 9.248  ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 10.156 ; 9.372  ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 9.078  ; 8.574  ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 8.743  ; 8.444  ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 10.169 ; 9.348  ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 9.736  ; 9.085  ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 8.877  ; 8.533  ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 9.397  ; 8.841  ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 9.736  ; 9.085  ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 8.798  ; 8.558  ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 8.805  ; 8.459  ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 9.454  ; 8.885  ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 8.392  ; 8.192  ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 9.782  ; 9.191  ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 8.269  ; 8.133  ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 8.231  ; 8.056  ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 8.298  ; 8.115  ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 8.260  ; 8.106  ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 9.782  ; 9.191  ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 8.280  ; 8.111  ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 9.525  ; 8.924  ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 10.700 ; 11.264 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 10.441 ; 10.992 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 10.377 ; 10.902 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 10.473 ; 11.138 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 8.889  ; 9.523  ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 10.205 ; 10.729 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 8.775  ; 9.218  ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 10.700 ; 11.264 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 8.343  ; 8.505  ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 8.418  ; 8.682  ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 9.728  ; 10.639 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 9.862  ; 9.182  ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 9.648  ; 9.009  ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 8.773  ; 8.512  ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 9.862  ; 9.182  ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 9.450  ; 8.994  ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 9.472  ; 8.906  ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 9.528  ; 8.913  ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 9.358  ; 8.926  ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 10.135 ; 9.359  ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 10.135 ; 9.359  ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 9.123  ; 8.707  ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 9.192  ; 8.663  ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 8.539  ; 8.341  ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 8.917  ; 8.579  ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 9.420  ; 8.879  ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 8.963  ; 8.623  ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 9.325  ; 8.818  ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 9.325  ; 8.818  ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 8.844  ; 8.441  ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 8.256  ; 8.118  ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 8.558  ; 8.292  ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 8.638  ; 8.372  ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 8.539  ; 8.273  ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 8.600  ; 8.342  ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 10.025 ; 9.262  ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 8.646  ; 8.359  ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 9.130  ; 8.593  ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 8.715  ; 8.488  ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 10.025 ; 9.262  ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 9.055  ; 8.561  ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 9.871  ; 9.129  ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 8.556  ; 8.394  ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 9.284  ; 8.718  ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 8.774  ; 8.474  ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 8.800  ; 8.547  ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 8.897  ; 8.531  ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 8.366  ; 8.269  ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 9.284  ; 8.718  ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 8.518  ; 8.314  ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 8.793  ; 8.397  ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 9.837  ; 9.128  ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 8.973  ; 8.493  ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 8.363  ; 8.180  ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 8.639  ; 8.342  ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 9.005  ; 8.518  ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 9.837  ; 9.128  ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 9.017  ; 8.521  ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 9.289  ; 8.781  ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 10.602 ; 11.143 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 10.165 ; 10.530 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 10.547 ; 11.143 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 10.065 ; 10.482 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 9.630  ; 10.482 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 10.257 ; 10.815 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 8.608  ; 9.016  ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 10.602 ; 11.046 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 9.599  ; 10.507 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 9.227  ; 9.985  ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 8.524  ; 8.702  ; Fall       ; CLOCK_50        ;
 +-----------+------------+--------+--------+------------+-----------------+
 
 
@@ -1181,65 +1181,65 @@ No synchronizer chains to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; HEX0[*]   ; CLOCK_50   ; 4.855 ; 4.701 ; Fall       ; CLOCK_50        ;
-;  HEX0[0]  ; CLOCK_50   ; 5.887 ; 5.425 ; Fall       ; CLOCK_50        ;
-;  HEX0[1]  ; CLOCK_50   ; 4.855 ; 4.701 ; Fall       ; CLOCK_50        ;
-;  HEX0[2]  ; CLOCK_50   ; 5.199 ; 4.912 ; Fall       ; CLOCK_50        ;
-;  HEX0[3]  ; CLOCK_50   ; 6.083 ; 5.555 ; Fall       ; CLOCK_50        ;
-;  HEX0[4]  ; CLOCK_50   ; 5.508 ; 5.166 ; Fall       ; CLOCK_50        ;
-;  HEX0[5]  ; CLOCK_50   ; 5.514 ; 5.161 ; Fall       ; CLOCK_50        ;
-;  HEX0[6]  ; CLOCK_50   ; 5.016 ; 4.804 ; Fall       ; CLOCK_50        ;
-; HEX1[*]   ; CLOCK_50   ; 4.955 ; 4.770 ; Fall       ; CLOCK_50        ;
-;  HEX1[0]  ; CLOCK_50   ; 5.740 ; 5.305 ; Fall       ; CLOCK_50        ;
-;  HEX1[1]  ; CLOCK_50   ; 5.117 ; 4.875 ; Fall       ; CLOCK_50        ;
-;  HEX1[2]  ; CLOCK_50   ; 5.302 ; 5.005 ; Fall       ; CLOCK_50        ;
-;  HEX1[3]  ; CLOCK_50   ; 4.955 ; 4.770 ; Fall       ; CLOCK_50        ;
-;  HEX1[4]  ; CLOCK_50   ; 5.533 ; 5.168 ; Fall       ; CLOCK_50        ;
-;  HEX1[5]  ; CLOCK_50   ; 5.447 ; 5.129 ; Fall       ; CLOCK_50        ;
-;  HEX1[6]  ; CLOCK_50   ; 5.133 ; 4.902 ; Fall       ; CLOCK_50        ;
-; HEX2[*]   ; CLOCK_50   ; 4.725 ; 4.564 ; Fall       ; CLOCK_50        ;
-;  HEX2[0]  ; CLOCK_50   ; 4.825 ; 4.644 ; Fall       ; CLOCK_50        ;
-;  HEX2[1]  ; CLOCK_50   ; 5.228 ; 4.945 ; Fall       ; CLOCK_50        ;
-;  HEX2[2]  ; CLOCK_50   ; 5.256 ; 4.963 ; Fall       ; CLOCK_50        ;
-;  HEX2[3]  ; CLOCK_50   ; 5.256 ; 4.962 ; Fall       ; CLOCK_50        ;
-;  HEX2[4]  ; CLOCK_50   ; 5.014 ; 4.825 ; Fall       ; CLOCK_50        ;
-;  HEX2[5]  ; CLOCK_50   ; 4.725 ; 4.564 ; Fall       ; CLOCK_50        ;
-;  HEX2[6]  ; CLOCK_50   ; 4.990 ; 4.804 ; Fall       ; CLOCK_50        ;
-; HEX3[*]   ; CLOCK_50   ; 5.011 ; 4.774 ; Fall       ; CLOCK_50        ;
-;  HEX3[0]  ; CLOCK_50   ; 5.011 ; 4.774 ; Fall       ; CLOCK_50        ;
-;  HEX3[1]  ; CLOCK_50   ; 5.306 ; 4.991 ; Fall       ; CLOCK_50        ;
-;  HEX3[2]  ; CLOCK_50   ; 5.864 ; 5.375 ; Fall       ; CLOCK_50        ;
-;  HEX3[3]  ; CLOCK_50   ; 5.932 ; 5.446 ; Fall       ; CLOCK_50        ;
-;  HEX3[4]  ; CLOCK_50   ; 5.241 ; 4.947 ; Fall       ; CLOCK_50        ;
-;  HEX3[5]  ; CLOCK_50   ; 5.021 ; 4.808 ; Fall       ; CLOCK_50        ;
-;  HEX3[6]  ; CLOCK_50   ; 5.983 ; 5.463 ; Fall       ; CLOCK_50        ;
-; HEX4[*]   ; CLOCK_50   ; 4.879 ; 4.675 ; Fall       ; CLOCK_50        ;
-;  HEX4[0]  ; CLOCK_50   ; 5.091 ; 4.799 ; Fall       ; CLOCK_50        ;
-;  HEX4[1]  ; CLOCK_50   ; 5.487 ; 5.121 ; Fall       ; CLOCK_50        ;
-;  HEX4[2]  ; CLOCK_50   ; 5.615 ; 5.227 ; Fall       ; CLOCK_50        ;
-;  HEX4[3]  ; CLOCK_50   ; 5.062 ; 4.813 ; Fall       ; CLOCK_50        ;
-;  HEX4[4]  ; CLOCK_50   ; 5.093 ; 4.826 ; Fall       ; CLOCK_50        ;
-;  HEX4[5]  ; CLOCK_50   ; 5.494 ; 5.122 ; Fall       ; CLOCK_50        ;
-;  HEX4[6]  ; CLOCK_50   ; 4.879 ; 4.675 ; Fall       ; CLOCK_50        ;
-; HEX5[*]   ; CLOCK_50   ; 4.752 ; 4.605 ; Fall       ; CLOCK_50        ;
-;  HEX5[0]  ; CLOCK_50   ; 4.813 ; 4.627 ; Fall       ; CLOCK_50        ;
-;  HEX5[1]  ; CLOCK_50   ; 4.752 ; 4.605 ; Fall       ; CLOCK_50        ;
-;  HEX5[2]  ; CLOCK_50   ; 4.841 ; 4.679 ; Fall       ; CLOCK_50        ;
-;  HEX5[3]  ; CLOCK_50   ; 4.762 ; 4.618 ; Fall       ; CLOCK_50        ;
-;  HEX5[4]  ; CLOCK_50   ; 5.693 ; 5.303 ; Fall       ; CLOCK_50        ;
-;  HEX5[5]  ; CLOCK_50   ; 4.789 ; 4.622 ; Fall       ; CLOCK_50        ;
-;  HEX5[6]  ; CLOCK_50   ; 5.423 ; 5.075 ; Fall       ; CLOCK_50        ;
-; LEDR[*]   ; CLOCK_50   ; 4.668 ; 4.900 ; Fall       ; CLOCK_50        ;
-;  LEDR[0]  ; CLOCK_50   ; 5.381 ; 5.841 ; Fall       ; CLOCK_50        ;
-;  LEDR[1]  ; CLOCK_50   ; 5.358 ; 5.772 ; Fall       ; CLOCK_50        ;
-;  LEDR[2]  ; CLOCK_50   ; 5.474 ; 5.973 ; Fall       ; CLOCK_50        ;
-;  LEDR[3]  ; CLOCK_50   ; 5.014 ; 5.414 ; Fall       ; CLOCK_50        ;
-;  LEDR[4]  ; CLOCK_50   ; 5.306 ; 5.693 ; Fall       ; CLOCK_50        ;
-;  LEDR[5]  ; CLOCK_50   ; 4.942 ; 5.245 ; Fall       ; CLOCK_50        ;
-;  LEDR[6]  ; CLOCK_50   ; 5.447 ; 5.865 ; Fall       ; CLOCK_50        ;
-;  LEDR[7]  ; CLOCK_50   ; 4.668 ; 4.900 ; Fall       ; CLOCK_50        ;
-;  LEDR[8]  ; CLOCK_50   ; 4.782 ; 5.006 ; Fall       ; CLOCK_50        ;
-;  LEDR[9]  ; CLOCK_50   ; 5.671 ; 6.239 ; Fall       ; CLOCK_50        ;
+; HEX0[*]   ; CLOCK_50   ; 5.019 ; 4.828 ; Fall       ; CLOCK_50        ;
+;  HEX0[0]  ; CLOCK_50   ; 5.540 ; 5.171 ; Fall       ; CLOCK_50        ;
+;  HEX0[1]  ; CLOCK_50   ; 5.019 ; 4.828 ; Fall       ; CLOCK_50        ;
+;  HEX0[2]  ; CLOCK_50   ; 5.729 ; 5.311 ; Fall       ; CLOCK_50        ;
+;  HEX0[3]  ; CLOCK_50   ; 5.561 ; 5.174 ; Fall       ; CLOCK_50        ;
+;  HEX0[4]  ; CLOCK_50   ; 5.507 ; 5.165 ; Fall       ; CLOCK_50        ;
+;  HEX0[5]  ; CLOCK_50   ; 5.516 ; 5.163 ; Fall       ; CLOCK_50        ;
+;  HEX0[6]  ; CLOCK_50   ; 5.497 ; 5.123 ; Fall       ; CLOCK_50        ;
+; HEX1[*]   ; CLOCK_50   ; 4.967 ; 4.747 ; Fall       ; CLOCK_50        ;
+;  HEX1[0]  ; CLOCK_50   ; 5.899 ; 5.432 ; Fall       ; CLOCK_50        ;
+;  HEX1[1]  ; CLOCK_50   ; 5.239 ; 4.936 ; Fall       ; CLOCK_50        ;
+;  HEX1[2]  ; CLOCK_50   ; 5.321 ; 5.014 ; Fall       ; CLOCK_50        ;
+;  HEX1[3]  ; CLOCK_50   ; 4.967 ; 4.747 ; Fall       ; CLOCK_50        ;
+;  HEX1[4]  ; CLOCK_50   ; 5.181 ; 4.940 ; Fall       ; CLOCK_50        ;
+;  HEX1[5]  ; CLOCK_50   ; 5.447 ; 5.113 ; Fall       ; CLOCK_50        ;
+;  HEX1[6]  ; CLOCK_50   ; 5.158 ; 4.900 ; Fall       ; CLOCK_50        ;
+; HEX2[*]   ; CLOCK_50   ; 4.781 ; 4.660 ; Fall       ; CLOCK_50        ;
+;  HEX2[0]  ; CLOCK_50   ; 5.339 ; 5.040 ; Fall       ; CLOCK_50        ;
+;  HEX2[1]  ; CLOCK_50   ; 5.098 ; 4.868 ; Fall       ; CLOCK_50        ;
+;  HEX2[2]  ; CLOCK_50   ; 4.781 ; 4.660 ; Fall       ; CLOCK_50        ;
+;  HEX2[3]  ; CLOCK_50   ; 4.943 ; 4.723 ; Fall       ; CLOCK_50        ;
+;  HEX2[4]  ; CLOCK_50   ; 5.006 ; 4.814 ; Fall       ; CLOCK_50        ;
+;  HEX2[5]  ; CLOCK_50   ; 4.930 ; 4.737 ; Fall       ; CLOCK_50        ;
+;  HEX2[6]  ; CLOCK_50   ; 4.985 ; 4.803 ; Fall       ; CLOCK_50        ;
+; HEX3[*]   ; CLOCK_50   ; 4.942 ; 4.714 ; Fall       ; CLOCK_50        ;
+;  HEX3[0]  ; CLOCK_50   ; 5.036 ; 4.775 ; Fall       ; CLOCK_50        ;
+;  HEX3[1]  ; CLOCK_50   ; 5.294 ; 4.983 ; Fall       ; CLOCK_50        ;
+;  HEX3[2]  ; CLOCK_50   ; 5.056 ; 4.791 ; Fall       ; CLOCK_50        ;
+;  HEX3[3]  ; CLOCK_50   ; 5.878 ; 5.407 ; Fall       ; CLOCK_50        ;
+;  HEX3[4]  ; CLOCK_50   ; 5.222 ; 4.933 ; Fall       ; CLOCK_50        ;
+;  HEX3[5]  ; CLOCK_50   ; 5.721 ; 5.278 ; Fall       ; CLOCK_50        ;
+;  HEX3[6]  ; CLOCK_50   ; 4.942 ; 4.714 ; Fall       ; CLOCK_50        ;
+; HEX4[*]   ; CLOCK_50   ; 4.820 ; 4.657 ; Fall       ; CLOCK_50        ;
+;  HEX4[0]  ; CLOCK_50   ; 5.162 ; 4.846 ; Fall       ; CLOCK_50        ;
+;  HEX4[1]  ; CLOCK_50   ; 5.069 ; 4.839 ; Fall       ; CLOCK_50        ;
+;  HEX4[2]  ; CLOCK_50   ; 5.184 ; 4.920 ; Fall       ; CLOCK_50        ;
+;  HEX4[3]  ; CLOCK_50   ; 4.820 ; 4.657 ; Fall       ; CLOCK_50        ;
+;  HEX4[4]  ; CLOCK_50   ; 5.387 ; 5.047 ; Fall       ; CLOCK_50        ;
+;  HEX4[5]  ; CLOCK_50   ; 4.979 ; 4.723 ; Fall       ; CLOCK_50        ;
+;  HEX4[6]  ; CLOCK_50   ; 5.101 ; 4.840 ; Fall       ; CLOCK_50        ;
+; HEX5[*]   ; CLOCK_50   ; 4.844 ; 4.701 ; Fall       ; CLOCK_50        ;
+;  HEX5[0]  ; CLOCK_50   ; 5.194 ; 4.907 ; Fall       ; CLOCK_50        ;
+;  HEX5[1]  ; CLOCK_50   ; 4.844 ; 4.701 ; Fall       ; CLOCK_50        ;
+;  HEX5[2]  ; CLOCK_50   ; 5.022 ; 4.806 ; Fall       ; CLOCK_50        ;
+;  HEX5[3]  ; CLOCK_50   ; 5.219 ; 4.923 ; Fall       ; CLOCK_50        ;
+;  HEX5[4]  ; CLOCK_50   ; 5.728 ; 5.309 ; Fall       ; CLOCK_50        ;
+;  HEX5[5]  ; CLOCK_50   ; 5.224 ; 4.908 ; Fall       ; CLOCK_50        ;
+;  HEX5[6]  ; CLOCK_50   ; 5.306 ; 5.025 ; Fall       ; CLOCK_50        ;
+; LEDR[*]   ; CLOCK_50   ; 4.815 ; 5.027 ; Fall       ; CLOCK_50        ;
+;  LEDR[0]  ; CLOCK_50   ; 5.081 ; 5.393 ; Fall       ; CLOCK_50        ;
+;  LEDR[1]  ; CLOCK_50   ; 5.486 ; 5.938 ; Fall       ; CLOCK_50        ;
+;  LEDR[2]  ; CLOCK_50   ; 5.014 ; 5.334 ; Fall       ; CLOCK_50        ;
+;  LEDR[3]  ; CLOCK_50   ; 5.544 ; 6.132 ; Fall       ; CLOCK_50        ;
+;  LEDR[4]  ; CLOCK_50   ; 5.353 ; 5.759 ; Fall       ; CLOCK_50        ;
+;  LEDR[5]  ; CLOCK_50   ; 4.833 ; 5.147 ; Fall       ; CLOCK_50        ;
+;  LEDR[6]  ; CLOCK_50   ; 5.346 ; 5.689 ; Fall       ; CLOCK_50        ;
+;  LEDR[7]  ; CLOCK_50   ; 5.620 ; 6.196 ; Fall       ; CLOCK_50        ;
+;  LEDR[8]  ; CLOCK_50   ; 5.355 ; 5.850 ; Fall       ; CLOCK_50        ;
+;  LEDR[9]  ; CLOCK_50   ; 4.815 ; 5.027 ; Fall       ; CLOCK_50        ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -1571,7 +1571,7 @@ No synchronizer chains to report.
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; CLOCK_50   ; CLOCK_50 ; 1882935  ; 72788    ; 12361    ; 0        ;
+; CLOCK_50   ; CLOCK_50 ; 1876966  ; 72788    ; 12433    ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1581,7 +1581,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +------------+----------+----------+----------+----------+----------+
 ; From Clock ; To Clock ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +------------+----------+----------+----------+----------+----------+
-; CLOCK_50   ; CLOCK_50 ; 1882935  ; 72788    ; 12361    ; 0        ;
+; CLOCK_50   ; CLOCK_50 ; 1876966  ; 72788    ; 12433    ; 0        ;
 +------------+----------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -1606,7 +1606,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 14    ; 14   ;
-; Unconstrained Input Port Paths  ; 2061  ; 2061 ;
+; Unconstrained Input Port Paths  ; 2058  ; 2058 ;
 ; Unconstrained Output Ports      ; 52    ; 52   ;
 ; Unconstrained Output Port Paths ; 52    ; 52   ;
 +---------------------------------+-------+------+
@@ -1618,7 +1618,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Dec 11 19:30:48 2018
+    Info: Processing started: Tue Dec 11 21:19:03 2018
 Info: Command: quartus_sta pipe_computer -c pipe_computer
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -1634,20 +1634,20 @@ Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1100mV 85C Model
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -12.563
+Info (332146): Worst-case setup slack is -12.658
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.563           -7240.119 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.404
+    Info (332119):   -12.658           -6845.660 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.398
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.404               0.000 CLOCK_50 
+    Info (332119):     0.398               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174           -1195.139 CLOCK_50 
+    Info (332119):    -2.174           -1208.322 CLOCK_50 
 Info: Analyzing Slow 1100mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 5CSEMA5F31C6 are preliminary
@@ -1655,20 +1655,20 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -12.440
+Info (332146): Worst-case setup slack is -12.667
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.440           -7251.558 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.404
+    Info (332119):   -12.667           -6897.400 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.399
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.404               0.000 CLOCK_50 
+    Info (332119):     0.399               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174           -1266.961 CLOCK_50 
+    Info (332119):    -2.174           -1275.296 CLOCK_50 
 Info: Analyzing Fast 1100mV 85C Model
 Info (334003): Started post-fitting delay annotation
 Warning (334000): Timing characteristics of device 5CSEMA5F31C6 are preliminary
@@ -1676,44 +1676,44 @@ Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -7.521
+Info (332146): Worst-case setup slack is -7.724
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.521           -3879.446 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.251
+    Info (332119):    -7.724           -3672.893 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.246
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.251               0.000 CLOCK_50 
+    Info (332119):     0.246               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -372.708 CLOCK_50 
+    Info (332119):    -2.174            -366.494 CLOCK_50 
 Info: Analyzing Fast 1100mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in TimeQuest to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
     Info (11105): For recommendations on closing timing, run Report Timing Closure Recommendations in the TimeQuest Timing Analyzer.
-Info (332146): Worst-case setup slack is -6.967
+Info (332146): Worst-case setup slack is -7.082
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.967           -3520.736 CLOCK_50 
-Info (332146): Worst-case hold slack is 0.224
+    Info (332119):    -7.082           -3321.113 CLOCK_50 
+Info (332146): Worst-case hold slack is 0.221
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.224               0.000 CLOCK_50 
+    Info (332119):     0.221               0.000 CLOCK_50 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is -2.174
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -2.174            -393.263 CLOCK_50 
+    Info (332119):    -2.174            -389.167 CLOCK_50 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 5010 megabytes
-    Info: Processing ended: Tue Dec 11 19:31:04 2018
-    Info: Elapsed time: 00:00:16
+    Info: Peak virtual memory: 5018 megabytes
+    Info: Processing ended: Tue Dec 11 21:19:20 2018
+    Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:16
 
 

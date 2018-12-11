@@ -6,7 +6,7 @@ JedecChain;
 	P ActionCode(Ign)
 		Device PartName(SOCVHPS) MfrSpec(OpMask(0));
 	P ActionCode(Cfg)
-		Device PartName(5CSEMA5F31) Path("C:/Users/huyuqi/Downloads/SE345-digital-design-master/pipe_computer/output_files/") File("pipe_computer.sof") MfrSpec(OpMask(1));
+		Device PartName(5CSEMA5F31) Path("C:/git/PipelineCPU/output_files/") File("pipe_computer.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
