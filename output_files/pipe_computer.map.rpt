@@ -1,5 +1,5 @@
 Analysis & Synthesis report for pipe_computer
-Tue Dec 11 13:34:38 2018
+Tue Dec 11 19:29:05 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -51,7 +51,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +---------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Dec 11 13:34:38 2018      ;
+; Analysis & Synthesis Status     ; Successful - Tue Dec 11 19:29:05 2018      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; pipe_computer                              ;
 ; Top-level Entity Name           ; pipe_computer                              ;
@@ -222,14 +222,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimate of Logic utilization (ALMs needed) ; 1521           ;
+; Estimate of Logic utilization (ALMs needed) ; 1529           ;
 ;                                             ;                ;
-; Combinational ALUT usage for logic          ; 1856           ;
-;     -- 7 input functions                    ; 24             ;
-;     -- 6 input functions                    ; 1036           ;
-;     -- 5 input functions                    ; 255            ;
-;     -- 4 input functions                    ; 116            ;
-;     -- <=3 input functions                  ; 425            ;
+; Combinational ALUT usage for logic          ; 1881           ;
+;     -- 7 input functions                    ; 25             ;
+;     -- 6 input functions                    ; 1026           ;
+;     -- 5 input functions                    ; 287            ;
+;     -- 4 input functions                    ; 126            ;
+;     -- <=3 input functions                  ; 417            ;
 ;                                             ;                ;
 ; Dedicated logic registers                   ; 1411           ;
 ;                                             ;                ;
@@ -239,8 +239,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ; Total DSP Blocks                            ; 0              ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 1475           ;
-; Total fan-out                               ; 15220          ;
-; Average fan-out                             ; 4.39           ;
+; Total fan-out                               ; 15347          ;
+; Average fan-out                             ; 4.40           ;
 +---------------------------------------------+----------------+
 
 
@@ -249,14 +249,14 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                      ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                  ; Library Name ;
 +-------------------------------------------------+-------------------+--------------+-------------------+------------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------+--------------+
-; |pipe_computer                                  ; 1856 (0)          ; 1411 (0)     ; 5120              ; 0          ; 67   ; 0            ; |pipe_computer                                                                                                                       ; work         ;
+; |pipe_computer                                  ; 1881 (0)          ; 1411 (0)     ; 5120              ; 0          ; 67   ; 0            ; |pipe_computer                                                                                                                       ; work         ;
 ;    |pipe_D_reg:inst3|                           ; 0 (0)             ; 64 (0)       ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_reg:inst3                                                                                                      ; work         ;
 ;       |dffe32:ins_r_d|                          ; 0 (0)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_reg:inst3|dffe32:ins_r_d                                                                                       ; work         ;
 ;       |dffe32:pc4_r_d|                          ; 0 (0)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_reg:inst3|dffe32:pc4_r_d                                                                                       ; work         ;
-;    |pipe_D_stage:inst4|                         ; 1044 (69)         ; 992 (0)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4                                                                                                    ; work         ;
+;    |pipe_D_stage:inst4|                         ; 1053 (66)         ; 992 (0)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4                                                                                                    ; work         ;
 ;       |mux2x5:selectrn|                         ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|mux2x5:selectrn                                                                                    ; work         ;
-;       |mux4x32:selecta|                         ; 445 (445)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selecta                                                                                    ; work         ;
-;       |mux4x32:selectb|                         ; 440 (440)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selectb                                                                                    ; work         ;
+;       |mux4x32:selecta|                         ; 450 (450)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selecta                                                                                    ; work         ;
+;       |mux4x32:selectb|                         ; 447 (447)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selectb                                                                                    ; work         ;
 ;       |pipe_cu:cu|                              ; 52 (52)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|pipe_cu:cu                                                                                         ; work         ;
 ;       |regfile:rf|                              ; 33 (33)           ; 992 (992)    ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_D_stage:inst4|regfile:rf                                                                                         ; work         ;
 ;    |pipe_E_reg:inst5|                           ; 0 (0)             ; 128 (0)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_reg:inst5                                                                                                      ; work         ;
@@ -272,11 +272,11 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;       |dff32:pc4_r_e|                           ; 0 (0)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_reg:inst5|dff32:pc4_r_e                                                                                        ; work         ;
 ;       |dff4:aluc_r_e|                           ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_reg:inst5|dff4:aluc_r_e                                                                                        ; work         ;
 ;       |dff5:rn_r_e|                             ; 0 (0)             ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_reg:inst5|dff5:rn_r_e                                                                                          ; work         ;
-;    |pipe_E_stage:inst6|                         ; 616 (35)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_stage:inst6                                                                                                    ; work         ;
-;       |alu:al_unit|                             ; 302 (302)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_stage:inst6|alu:al_unit                                                                                        ; work         ;
+;    |pipe_E_stage:inst6|                         ; 632 (35)          ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_stage:inst6                                                                                                    ; work         ;
+;       |alu:al_unit|                             ; 314 (314)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_stage:inst6|alu:al_unit                                                                                        ; work         ;
 ;       |mux2x32:selectalua|                      ; 29 (29)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalua                                                                                 ; work         ;
-;       |mux2x32:selectalub|                      ; 29 (29)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalub                                                                                 ; work         ;
-;       |mux2x32:selectalur|                      ; 221 (221)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur                                                                                 ; work         ;
+;       |mux2x32:selectalub|                      ; 30 (30)           ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalub                                                                                 ; work         ;
+;       |mux2x32:selectalur|                      ; 224 (224)         ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur                                                                                 ; work         ;
 ;    |pipe_F_reg:inst1|                           ; 8 (0)             ; 32 (0)       ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_F_reg:inst1                                                                                                      ; work         ;
 ;       |dffe32pc:ip|                             ; 8 (8)             ; 32 (32)      ; 0                 ; 0          ; 0    ; 0            ; |pipe_computer|pipe_F_reg:inst1|dffe32pc:ip                                                                                          ; work         ;
 ;    |pipe_F_stage:inst2|                         ; 62 (30)           ; 0 (0)        ; 4096              ; 0          ; 0    ; 0            ; |pipe_computer|pipe_F_stage:inst2                                                                                                    ; work         ;
@@ -441,22 +441,22 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; Yes        ; |pipe_computer|pipe_F_reg:inst1|dffe32pc:ip|q[0]                 ;
-; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |pipe_computer|pipe_F_reg:inst1|dffe32pc:ip|q[20]                ;
+; 4:1                ; 30 bits   ; 60 LEs        ; 60 LEs               ; 0 LEs                  ; Yes        ; |pipe_computer|pipe_F_reg:inst1|dffe32pc:ip|q[29]                ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_E_stage:inst6|alu:al_unit|ShiftLeft0         ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_E_stage:inst6|alu:al_unit|ShiftRight0        ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_E_stage:inst6|alu:al_unit|ShiftRight1        ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_E_stage:inst6|alu:al_unit|ShiftRight0        ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_E_stage:inst6|alu:al_unit|ShiftLeft0         ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_D_stage:inst4|pipe_cu:cu|fwdb[1]             ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_D_stage:inst4|pipe_cu:cu|fwda[0]             ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_M_stage:inst8|pipe_datamem:datamem|Selector7 ;
-; 35:1               ; 32 bits   ; 736 LEs       ; 736 LEs              ; 0 LEs                  ; No         ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selectb|Mux29          ;
-; 35:1               ; 32 bits   ; 736 LEs       ; 736 LEs              ; 0 LEs                  ; No         ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selecta|Mux21          ;
-; 23:1               ; 7 bits    ; 105 LEs       ; 77 LEs               ; 28 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[12]       ;
-; 24:1               ; 11 bits   ; 176 LEs       ; 121 LEs              ; 55 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[19]       ;
-; 24:1               ; 4 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[6]        ;
-; 25:1               ; 3 bits    ; 48 LEs        ; 36 LEs               ; 12 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[1]        ;
-; 26:1               ; 3 bits    ; 51 LEs        ; 36 LEs               ; 15 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[28]       ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_D_stage:inst4|pipe_cu:cu|fwdb[0]             ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_D_stage:inst4|pipe_cu:cu|fwda[1]             ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |pipe_computer|pipe_M_stage:inst8|pipe_datamem:datamem|Selector8 ;
+; 35:1               ; 32 bits   ; 736 LEs       ; 736 LEs              ; 0 LEs                  ; No         ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selectb|Mux3           ;
+; 35:1               ; 32 bits   ; 736 LEs       ; 736 LEs              ; 0 LEs                  ; No         ; |pipe_computer|pipe_D_stage:inst4|mux4x32:selecta|Mux16          ;
+; 23:1               ; 7 bits    ; 105 LEs       ; 77 LEs               ; 28 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[9]        ;
+; 24:1               ; 11 bits   ; 176 LEs       ; 121 LEs              ; 55 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[22]       ;
+; 24:1               ; 4 bits    ; 64 LEs        ; 48 LEs               ; 16 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[7]        ;
+; 25:1               ; 3 bits    ; 48 LEs        ; 36 LEs               ; 12 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[3]        ;
+; 26:1               ; 3 bits    ; 51 LEs        ; 36 LEs               ; 15 LEs                 ; No         ; |pipe_computer|pipe_E_stage:inst6|mux2x32:selectalur|y[30]       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------------------------------------------+
 
 
@@ -636,7 +636,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:12     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -646,7 +646,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Dec 11 13:34:22 2018
+    Info: Processing started: Tue Dec 11 19:28:54 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off pipe_computer -c pipe_computer
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file cu.v
@@ -785,15 +785,15 @@ Info (12128): Elaborating entity "pipe_W_stage" for hierarchy "pipe_W_stage:inst
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 3243 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 3270 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 3112 logic cells
+    Info (21061): Implemented 3139 logic cells
     Info (21064): Implemented 64 RAM segments
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
-    Info: Peak virtual memory: 4728 megabytes
-    Info: Processing ended: Tue Dec 11 13:34:38 2018
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:15
+    Info: Peak virtual memory: 4731 megabytes
+    Info: Processing ended: Tue Dec 11 19:29:05 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:09
 
 
