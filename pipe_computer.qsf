@@ -128,22 +128,21 @@ set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
+set_global_assignment -name VERILOG_FILE cu.v
+set_global_assignment -name VERILOG_FILE stage_W.v
+set_global_assignment -name VERILOG_FILE stage_M.v
+set_global_assignment -name VERILOG_FILE stage_F.v
+set_global_assignment -name VERILOG_FILE stage_E.v
+set_global_assignment -name VERILOG_FILE stage_D.v
+set_global_assignment -name VERILOG_FILE reg_W.v
+set_global_assignment -name VERILOG_FILE reg_M.v
+set_global_assignment -name VERILOG_FILE reg_F.v
+set_global_assignment -name VERILOG_FILE reg_E.v
+set_global_assignment -name VERILOG_FILE reg_D.v
 set_global_assignment -name VERILOG_FILE dffe32pc.v
 set_global_assignment -name VERILOG_FILE regfile.v
-set_global_assignment -name VERILOG_FILE pipe_W_stage.v
-set_global_assignment -name VERILOG_FILE pipe_W_reg.v
-set_global_assignment -name VERILOG_FILE pipe_M_stage.v
-set_global_assignment -name VERILOG_FILE pipe_M_reg.v
 set_global_assignment -name VERILOG_FILE pipe_instmem.v
-set_global_assignment -name VERILOG_FILE pipe_F_stage.v
-set_global_assignment -name VERILOG_FILE pipe_F_reg.v
-set_global_assignment -name VERILOG_FILE pipe_E_stage.v
-set_global_assignment -name VERILOG_FILE pipe_E_reg.v
-set_global_assignment -name VERILOG_FILE pipe_D_stage.v
-set_global_assignment -name VERILOG_FILE pipe_D_reg.v
 set_global_assignment -name VERILOG_FILE pipe_datamem.v
-set_global_assignment -name VERILOG_FILE pipe_cu.v
-set_global_assignment -name VERILOG_FILE pipe_computer.v
 set_global_assignment -name VERILOG_FILE mux4x32.v
 set_global_assignment -name VERILOG_FILE mux2x5.v
 set_global_assignment -name VERILOG_FILE mux2x32.v
