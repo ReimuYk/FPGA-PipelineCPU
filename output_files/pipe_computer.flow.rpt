@@ -1,5 +1,5 @@
 Flow report for pipe_computer
-Wed Dec 12 14:23:54 2018
+Wed Dec 12 20:28:52 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Wed Dec 12 14:23:54 2018      ;
+; Flow Status                     ; Successful - Wed Dec 12 20:28:52 2018      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; pipe_computer                              ;
 ; Top-level Entity Name           ; pipe_computer                              ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/12/2018 14:20:42 ;
+; Start date & time ; 12/12/2018 20:26:17 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipe_computer       ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 216182574824524.154459564210040 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 216182574824524.154461757711772 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -99,12 +99,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4716 MB             ; 00:00:08                           ;
-; Fitter                    ; 00:01:35     ; 1.0                     ; 5701 MB             ; 00:01:35                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 4808 MB             ; 00:00:10                           ;
-; TimeQuest Timing Analyzer ; 00:00:17     ; 1.0                     ; 5024 MB             ; 00:00:16                           ;
-; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4698 MB             ; 00:00:03                           ;
-; Total                     ; 00:02:15     ; --                      ; --                  ; 00:02:12                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4715 MB             ; 00:00:10                           ;
+; Fitter                    ; 00:01:30     ; 1.0                     ; 5693 MB             ; 00:01:25                           ;
+; Assembler                 ; 00:00:16     ; 1.0                     ; 4808 MB             ; 00:00:12                           ;
+; TimeQuest Timing Analyzer ; 00:00:26     ; 1.0                     ; 5024 MB             ; 00:00:23                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4698 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:25     ; --                      ; --                  ; 00:02:12                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
