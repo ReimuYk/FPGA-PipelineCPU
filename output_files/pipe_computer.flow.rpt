@@ -1,5 +1,5 @@
 Flow report for pipe_computer
-Tue Dec 11 23:53:45 2018
+Wed Dec 12 13:57:51 2018
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,15 +40,15 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Flow Summary                                                                 ;
 +---------------------------------+--------------------------------------------+
-; Flow Status                     ; Successful - Tue Dec 11 23:53:45 2018      ;
+; Flow Status                     ; Successful - Wed Dec 12 13:57:51 2018      ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                   ; pipe_computer                              ;
 ; Top-level Entity Name           ; pipe_computer                              ;
 ; Family                          ; Cyclone V                                  ;
 ; Device                          ; 5CSEMA5F31C6                               ;
 ; Timing Models                   ; Preliminary                                ;
-; Logic utilization (in ALMs)     ; 1,430 / 32,070 ( 4 % )                     ;
-; Total registers                 ; 1585                                       ;
+; Logic utilization (in ALMs)     ; 1,429 / 32,070 ( 4 % )                     ;
+; Total registers                 ; 1592                                       ;
 ; Total pins                      ; 67 / 457 ( 15 % )                          ;
 ; Total virtual pins              ; 0                                          ;
 ; Total block memory bits         ; 5,120 / 4,065,280 ( < 1 % )                ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 12/11/2018 23:51:44 ;
+; Start date & time ; 12/12/2018 13:55:38 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; pipe_computer       ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 216182574824524.154454350406152 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 216182574824524.154459413805632 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -99,12 +99,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:09     ; 1.0                     ; 4719 MB             ; 00:00:09                           ;
-; Fitter                    ; 00:01:15     ; 1.0                     ; 5776 MB             ; 00:01:15                           ;
-; Assembler                 ; 00:00:11     ; 1.0                     ; 4799 MB             ; 00:00:11                           ;
-; TimeQuest Timing Analyzer ; 00:00:16     ; 1.0                     ; 5024 MB             ; 00:00:16                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4696 MB             ; 00:00:02                           ;
-; Total                     ; 00:01:53     ; --                      ; --                  ; 00:01:53                           ;
+; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4720 MB             ; 00:00:09                           ;
+; Fitter                    ; 00:01:24     ; 1.0                     ; 5693 MB             ; 00:01:22                           ;
+; Assembler                 ; 00:00:13     ; 1.0                     ; 4805 MB             ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:16     ; 1.0                     ; 5016 MB             ; 00:00:16                           ;
+; EDA Netlist Writer        ; 00:00:03     ; 1.0                     ; 4698 MB             ; 00:00:02                           ;
+; Total                     ; 00:02:06     ; --                      ; --                  ; 00:01:59                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
