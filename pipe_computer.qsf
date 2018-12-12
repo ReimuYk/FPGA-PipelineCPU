@@ -129,11 +129,6 @@ set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -
 set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
 set_global_assignment -name ACTIVE_SERIAL_CLOCK FREQ_100MHZ
 set_global_assignment -name VERILOG_FILE cu.v
-set_global_assignment -name VERILOG_FILE stage_W.v
-set_global_assignment -name VERILOG_FILE stage_M.v
-set_global_assignment -name VERILOG_FILE stage_F.v
-set_global_assignment -name VERILOG_FILE stage_E.v
-set_global_assignment -name VERILOG_FILE stage_D.v
 set_global_assignment -name VERILOG_FILE reg_W.v
 set_global_assignment -name VERILOG_FILE reg_M.v
 set_global_assignment -name VERILOG_FILE reg_F.v

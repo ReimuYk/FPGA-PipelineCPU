@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
 
-// DATE "12/12/2018 14:17:43"
+// DATE "12/12/2018 14:23:53"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -3602,8 +3602,8 @@ wire [31:0] \inst7|alu_r_m|q ;
 wire [3:0] \inst5|aluc_r_e|q ;
 wire [3:0] \inst|aluc ;
 wire [4:0] \inst19|ern ;
-wire [31:0] \inst1|ip|q ;
 wire [31:0] \inst3|pc4_r_d|q ;
+wire [31:0] \inst1|ip|q ;
 
 wire [19:0] \inst20|dram|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus ;
 wire [19:0] \inst20|dram|altsyncram_component|auto_generated|ram_block1a2_PORTADATAOUT_bus ;

@@ -1,10 +1,5 @@
 vendor_name = ModelSim
 source_file = 1, C:/git/PipelineCPU/cu.v
-source_file = 1, C:/git/PipelineCPU/stage_W.v
-source_file = 1, C:/git/PipelineCPU/stage_M.v
-source_file = 1, C:/git/PipelineCPU/stage_F.v
-source_file = 1, C:/git/PipelineCPU/stage_E.v
-source_file = 1, C:/git/PipelineCPU/stage_D.v
 source_file = 1, C:/git/PipelineCPU/reg_W.v
 source_file = 1, C:/git/PipelineCPU/reg_M.v
 source_file = 1, C:/git/PipelineCPU/reg_F.v
